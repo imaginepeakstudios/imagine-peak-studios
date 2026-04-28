@@ -428,6 +428,13 @@
           display: block;
         }
 
+        /* Hide external-link ↗ glyph on mobile — Manrope doesn't ship U+2197,
+           so the fallback glyph mismatches surrounding type weight. The
+           target="_blank" affordance is handled by the browser. */
+        .brief-body a[href^="http"]::after,
+        .brief-body a[href^="//"]::after {
+          content: none;
+        }
       }
     </style>
   </head>

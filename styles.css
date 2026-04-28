@@ -1210,6 +1210,14 @@ p {
     display: none;
   }
 
+  /* Hide external-link ↗ glyph on mobile — at full-screen-overlay scale,
+     the U+2197 fallback glyph (Manrope doesn't ship this codepoint) doesn't
+     match the surrounding type weight. The target="_blank" affordance is
+     handled by the browser. */
+  .site-nav a span[aria-hidden="true"] {
+    display: none;
+  }
+
   .nav-backdrop {
     display: none;
   }
