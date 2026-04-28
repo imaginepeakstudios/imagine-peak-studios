@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insights — Briefs and analysis · Imagine Peak Studios</title>
+    <meta
+      name="description"
+      content="Editorial notes from Imagine Peak Studios on AI-native media, infrastructure, and the systems shaping creative work."
+    />
+    <meta name="author" content="Imagine Peak Studios" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://imaginepeakstudios.com/insights/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Imagine Peak Studios" />
+    <meta property="og:title" content="Insights — Briefs and analysis · Imagine Peak Studios" />
+    <meta property="og:description" content="Editorial notes from Imagine Peak Studios on AI-native media, infrastructure, and the systems shaping creative work." />
+    <meta property="og:url" content="https://imaginepeakstudios.com/insights/" />
+    <meta property="og:image" content="https://imaginepeakstudios.com/imagine_peak_studios_og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Insights — Briefs and analysis · Imagine Peak Studios" />
+    <meta name="twitter:description" content="Editorial briefs and analysis from Imagine Peak Studios." />
+    <meta name="twitter:image" content="https://imaginepeakstudios.com/imagine_peak_studios_og.jpg" />
+    <meta name="theme-color" content="#050505" />
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 — mirrors main site -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      var ipsConsent = null;
+      try { ipsConsent = localStorage.getItem('ips-consent'); } catch (e) {}
+      gtag('consent', 'default', {
+        ad_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_user_data: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_personalization: ipsConsent === 'granted' ? 'granted' : 'denied',
+        analytics_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        functionality_storage: 'granted',
+        personalization_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        security_storage: 'granted'
+      });
+      gtag('js', new Date());
+      gtag('config', 'G-YC7JVM7M4E');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC7JVM7M4E"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Instrument+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>document.documentElement.classList.remove("no-js");</script>
+
+    <style>
+      /* Insights index — editorial card list */
+      .insights-hero {
+        padding-top: clamp(5rem, 10vw, 8rem);
+        padding-bottom: clamp(2rem, 4vw, 3.5rem);
+        background: var(--bg-soft, #f3f2ed);
+      }
+      .insights-hero .eyebrow { margin-bottom: 1rem; }
+      .insights-title {
+        font-family: 'Manrope', system-ui, sans-serif !important;
+        font-weight: 800;
+        font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--text, #111111);
+        margin: 0 0 1rem;
+        max-width: none;
+      }
+      .insights-title em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+      }
+      .insights-deck {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.55;
+        color: var(--muted, #626262);
+        max-width: 60ch;
+        margin: 0;
+      }
+
+      .insights-list {
+        padding-top: clamp(3rem, 5vw, 5rem);
+        padding-bottom: clamp(4rem, 7vw, 6rem);
+      }
+
+      .brief-card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        padding: 2rem 0;
+        border-top: 1px solid var(--rule, #dfded7);
+        transition: opacity 0.2s ease;
+      }
+      .brief-card:last-child { border-bottom: 1px solid var(--rule, #dfded7); }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-card:hover { opacity: 0.7; }
+        .brief-card:hover .brief-card-cta { text-decoration-color: currentColor; }
+      }
+
+      .brief-card-meta {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--muted, #626262);
+        margin-bottom: 0.75rem;
+      }
+      .brief-card-meta .tag {
+        color: var(--text, #111111);
+        font-weight: 700;
+      }
+      .brief-card-headline {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.5rem, 2.6vw, 2rem);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--text, #111111);
+        margin: 0 0 0.75rem;
+        max-width: 32ch;
+      }
+      .brief-card-headline em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+      }
+      .brief-card-deck {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: 1rem;
+        line-height: 1.55;
+        color: var(--muted, #626262);
+        max-width: 64ch;
+        margin: 0 0 1rem;
+      }
+      .brief-card-cta {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--text, #111111);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--rule, #dfded7);
+        transition: text-decoration-color 0.2s ease;
+      }
+
+      @media (max-width: 720px) {
+        .brief-card-meta { flex-wrap: wrap; gap: 0.5rem 1rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="shell header-shell">
+        <a class="brand-mark" href="/" aria-label="Imagine Peak Studios home">
+          <img
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt="Imagine Peak Studios"
+            width="42"
+            height="42"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="https://github.com/imaginepeakstudios" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="/insights/">Insights</a>
+          <a href="/press/">Press</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+
+    <main id="main">
+      <section class="section insights-hero ambient-section">
+        <div class="shell reading-shell">
+          <div class="eyebrow">Insights</div>
+          <h1 class="insights-title">Briefs <em>and analysis</em>.</h1>
+          <p class="insights-deck">
+            Editorial notes from Imagine Peak Studios on AI-native media, infrastructure, and the systems shaping creative work.
+          </p>
+        </div>
+      </section>
+
+      <section class="section insights-list ambient-section">
+        <div class="shell reading-shell">
+
+          <a class="brief-card" href="/insights/labels-ai-discovery">
+            <div class="brief-card-meta">
+              <span>April 2026</span>
+              <span class="tag">For Labels &amp; A&amp;R</span>
+            </div>
+            <h2 class="brief-card-headline">Streaming is the infrastructure. The new front end <em>is now forming.</em></h2>
+            <p class="brief-card-deck">
+              How AI agents are reshaping music discovery, and what catalog labels, A&amp;R, and rights holders should be paying attention to now — not next year.
+            </p>
+            <span class="brief-card-cta">Read brief →</span>
+          </a>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-shell">
+        <a class="footer-brand" href="/" aria-label="Imagine Peak Studios home">
+          <img
+            class="footer-icon"
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt=""
+            width="42"
+            height="42"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>Imagine Peak Studios</p>
+        </a>
+        <p class="footer-meta"><small>&copy; 2026 All rights reserved.</small></p>
+      </div>
+    </footer>
+
+    <aside class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Privacy preferences" hidden>
+      <div class="shell consent-shell">
+        <p class="consent-copy">We use a small amount of analytics to understand how the site is used. No tracking until you say so.</p>
+        <div class="consent-actions">
+          <button type="button" class="consent-btn consent-decline" data-consent="denied">Decline</button>
+          <button type="button" class="consent-btn consent-accept" data-consent="granted">Accept</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

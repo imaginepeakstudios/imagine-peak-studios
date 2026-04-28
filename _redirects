@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Insights — moved from /briefs/ to /insights/ (April 2026)
+/briefs/* /insights/:splat 301

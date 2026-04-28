@@ -10,7 +10,8 @@
     />
     <meta name="author" content="Matthew Hartley, Imagine Peak Studios" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://imaginepeakstudios.com/briefs/labels-ai-discovery" />
+    <link rel="canonical" href="https://imaginepeakstudios.com/insights/labels-ai-discovery" />
+    <link rel="alternate" type="text/markdown" href="https://imaginepeakstudios.com/insights/labels-ai-discovery.md" title="Markdown version" />
 
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Imagine Peak Studios" />
@@ -19,7 +20,7 @@
       property="og:description"
       content="How AI agents are reshaping music discovery, and what catalog labels, A&R, and rights holders should be paying attention to now."
     />
-    <meta property="og:url" content="https://imaginepeakstudios.com/briefs/labels-ai-discovery" />
+    <meta property="og:url" content="https://imaginepeakstudios.com/insights/labels-ai-discovery" />
     <meta
       property="og:image"
       content="https://imaginepeakstudios.com/imagine_peak_studios_og.jpg"
@@ -86,7 +87,7 @@
         "@type": "Article",
         "headline": "Streaming is the infrastructure. The new front end is now forming.",
         "description": "How AI agents are reshaping music discovery, and what catalog labels, A&R, and rights holders should be paying attention to now.",
-        "url": "https://imaginepeakstudios.com/briefs/labels-ai-discovery",
+        "url": "https://imaginepeakstudios.com/insights/labels-ai-discovery",
         "author": {
           "@type": "Person",
           "name": "Matthew Hartley",
@@ -102,7 +103,7 @@
           }
         },
         "image": "https://imaginepeakstudios.com/imagine_peak_studios_og.jpg",
-        "mainEntityOfPage": "https://imaginepeakstudios.com/briefs/labels-ai-discovery"
+        "mainEntityOfPage": "https://imaginepeakstudios.com/insights/labels-ai-discovery"
       }
     </script>
 
@@ -111,32 +112,6 @@
          Brief-specific overrides — extends styles.css design tokens.
          Keeps the editorial IPS feel; tunes type rhythm for long-form reading.
          ----------------------------------------------------------------- */
-
-      /* Header nav — single back-to-IPS link, always visible */
-      .brief-nav {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-      }
-
-      .brief-back-link {
-        font-family: 'Manrope', system-ui, sans-serif;
-        font-size: 0.95rem;
-        font-weight: 500;
-        letter-spacing: 0;
-        color: var(--text, #111111);
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: opacity 0.2s ease;
-      }
-
-      @media (hover: hover) and (pointer: fine) {
-        .brief-back-link:hover {
-          opacity: 0.6;
-        }
-      }
 
       .brief-hero {
         background: var(--bg-soft, #f3f2ed);
@@ -299,16 +274,29 @@
       }
 
       .brief-body a {
-        color: var(--text, #111111);
+        color: #a04525;
         text-decoration: underline;
         text-underline-offset: 3px;
-        text-decoration-thickness: 1px;
-        text-decoration-color: var(--rule, #dfded7);
-        transition: text-decoration-color 0.2s ease;
+        text-decoration-thickness: 1.5px;
+        text-decoration-color: rgba(160, 69, 37, 0.45);
+        transition: color 0.2s ease, text-decoration-color 0.2s ease, text-decoration-thickness 0.2s ease;
       }
 
       .brief-body a:hover {
-        text-decoration-color: var(--text, #111111);
+        color: #7a3318;
+        text-decoration-color: #7a3318;
+        text-decoration-thickness: 2px;
+      }
+
+      /* External links get a small ↗ glyph */
+      .brief-body a[href^="http"]::after,
+      .brief-body a[href^="//"]::after {
+        content: "↗";
+        display: inline-block;
+        margin-left: 0.15em;
+        font-size: 0.85em;
+        text-decoration: none;
+        color: var(--muted, #626262);
       }
 
       /* Pull-quote / callout */
@@ -439,6 +427,7 @@
         .brief-title em {
           display: block;
         }
+
       }
     </style>
   </head>
@@ -456,11 +445,28 @@
             decoding="async"
           />
         </a>
-        <nav class="brief-nav" aria-label="Primary">
-          <a href="/" class="brief-back-link">Imagine Peak Studios <span aria-hidden="true">→</span></a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="https://github.com/imaginepeakstudios" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="/insights/">Insights</a>
+          <a href="/press/">Press</a>
+          <a href="/#contact">Contact</a>
         </nav>
       </div>
     </header>
+    <div class="nav-backdrop" hidden></div>
 
     <main id="brief">
       <article>
@@ -626,7 +632,7 @@
 
     <footer class="site-footer">
       <div class="shell footer-shell">
-        <div class="footer-brand">
+        <a class="footer-brand" href="/" aria-label="Imagine Peak Studios home">
           <img
             class="footer-icon"
             src="/imagine_peak_studios_icon_800x800.png"
@@ -637,7 +643,7 @@
             decoding="async"
           />
           <p>Imagine Peak Studios</p>
-        </div>
+        </a>
         <p class="footer-meta"><small>&copy; 2026 All rights reserved.</small></p>
       </div>
     </footer>
