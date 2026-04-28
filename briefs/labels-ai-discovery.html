@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming is the infrastructure. The new front end is now forming. — A Brief for Labels & A&R · Imagine Peak Studios</title>
+    <meta
+      name="description"
+      content="A short working brief on how AI-native discovery is reshaping music distribution — and what labels and A&R should be paying attention to right now. By Matthew Hartley, Imagine Peak Studios."
+    />
+    <meta name="author" content="Matthew Hartley, Imagine Peak Studios" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://imaginepeakstudios.com/briefs/labels-ai-discovery" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Imagine Peak Studios" />
+    <meta property="og:title" content="Streaming is the infrastructure. The new front end is now forming." />
+    <meta
+      property="og:description"
+      content="How AI agents are reshaping music discovery, and what catalog labels, A&R, and rights holders should be paying attention to now."
+    />
+    <meta property="og:url" content="https://imaginepeakstudios.com/briefs/labels-ai-discovery" />
+    <meta
+      property="og:image"
+      content="https://imaginepeakstudios.com/imagine_peak_studios_og.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="article:author" content="Matthew Hartley" />
+    <meta property="article:publisher" content="Imagine Peak Studios" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Streaming is the infrastructure. The new front end is now forming." />
+    <meta
+      name="twitter:description"
+      content="How AI agents are reshaping music discovery, and what catalog labels, A&R, and rights holders should be paying attention to now."
+    />
+    <meta
+      name="twitter:image"
+      content="https://imaginepeakstudios.com/imagine_peak_studios_og.jpg"
+    />
+    <meta name="theme-color" content="#050505" />
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 — mirrors main site -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      var ipsConsent = null;
+      try { ipsConsent = localStorage.getItem('ips-consent'); } catch (e) {}
+
+      gtag('consent', 'default', {
+        ad_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_user_data: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_personalization: ipsConsent === 'granted' ? 'granted' : 'denied',
+        analytics_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        functionality_storage: 'granted',
+        personalization_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        security_storage: 'granted'
+      });
+
+      gtag('js', new Date());
+      gtag('config', 'G-YC7JVM7M4E');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC7JVM7M4E"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Instrument+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Streaming is the infrastructure. The new front end is now forming.",
+        "description": "How AI agents are reshaping music discovery, and what catalog labels, A&R, and rights holders should be paying attention to now.",
+        "url": "https://imaginepeakstudios.com/briefs/labels-ai-discovery",
+        "author": {
+          "@type": "Person",
+          "name": "Matthew Hartley",
+          "url": "https://imaginepeakstudios.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Imagine Peak Studios",
+          "url": "https://imaginepeakstudios.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://imaginepeakstudios.com/imagine_peak_studios_icon_800x800.png"
+          }
+        },
+        "image": "https://imaginepeakstudios.com/imagine_peak_studios_og.jpg",
+        "mainEntityOfPage": "https://imaginepeakstudios.com/briefs/labels-ai-discovery"
+      }
+    </script>
+
+    <style>
+      /* -----------------------------------------------------------------
+         Brief-specific overrides — extends styles.css design tokens.
+         Keeps the editorial IPS feel; tunes type rhythm for long-form reading.
+         ----------------------------------------------------------------- */
+
+      /* Header nav — single back-to-IPS link, always visible */
+      .brief-nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+
+      .brief-back-link {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: var(--text, #111111);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: opacity 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-back-link:hover {
+          opacity: 0.6;
+        }
+      }
+
+      .brief-hero {
+        background: var(--bg-soft, #f3f2ed);
+        padding-top: clamp(5rem, 10vw, 8rem);
+        padding-bottom: clamp(3rem, 6vw, 5rem);
+      }
+
+      .brief-hero .eyebrow {
+        margin-bottom: 1.5rem;
+      }
+
+      /* Abstract waveform banner — frequency lines */
+      .brief-hero-banner {
+        width: 100%;
+        height: clamp(56px, 7vw, 88px);
+        margin-bottom: clamp(2.5rem, 5vw, 4rem);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        color: var(--muted, #626262);
+      }
+
+      .brief-waveform {
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0.7;
+      }
+
+      .brief-waveform rect {
+        fill: currentColor;
+      }
+
+      /* Slow drift to give it presence without being flashy */
+      @keyframes briefWaveformDrift {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(-1.5%); }
+      }
+
+      .brief-waveform {
+        animation: briefWaveformDrift 14s ease-in-out infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .brief-waveform {
+          animation: none;
+        }
+      }
+
+      .brief-title {
+        font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--text, #111111);
+        margin: 0 0 1.5rem;
+        max-width: 32ch;
+      }
+
+      .brief-title em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+      }
+
+      .brief-deck {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+        line-height: 1.55;
+        color: var(--muted, #626262);
+        max-width: 60ch;
+        margin: 0 0 2rem;
+      }
+
+      .brief-byline {
+        font-size: 0.85rem;
+        letter-spacing: 0.02em;
+        color: var(--muted, #626262);
+        text-transform: none;
+        margin: 0;
+      }
+
+      .brief-byline span {
+        color: var(--text, #111111);
+        font-weight: 700;
+      }
+
+      .brief-rule {
+        border: 0;
+        border-top: 1px solid var(--rule, #dfded7);
+        margin: clamp(3rem, 5vw, 5rem) 0;
+      }
+
+      /* Article body */
+      .brief-body {
+        font-size: 1.125rem;
+        line-height: 1.65;
+        color: var(--text, #111111);
+      }
+
+      /* Constrain prose for readability; let headings extend wider */
+      .brief-body p,
+      .brief-body ul {
+        max-width: 64ch;
+      }
+
+      .brief-body h2 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+        margin: 3rem 0 1rem;
+        max-width: none; /* override IPS global h2 max-width: 14ch */
+      }
+
+      .brief-body h2:first-child {
+        margin-top: 0;
+      }
+
+      .brief-body h3 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+        line-height: 1.4;
+        margin: 1.75rem 0 0.5rem;
+        max-width: none; /* override IPS global h3 inheritance if any */
+        color: var(--text, #111111);
+      }
+
+      .brief-body p {
+        margin: 0 0 1.25rem;
+      }
+
+      .brief-body p + p {
+        margin-top: 0;
+      }
+
+      .brief-body ul {
+        margin: 0 0 1.5rem;
+        padding-left: 1.25rem;
+      }
+
+      .brief-body ul li {
+        margin: 0 0 0.5rem;
+      }
+
+      .brief-body strong {
+        font-weight: 700;
+        color: var(--text, #111111);
+      }
+
+      .brief-body em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.08em;
+      }
+
+      .brief-body a {
+        color: var(--text, #111111);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1px;
+        text-decoration-color: var(--rule, #dfded7);
+        transition: text-decoration-color 0.2s ease;
+      }
+
+      .brief-body a:hover {
+        text-decoration-color: var(--text, #111111);
+      }
+
+      /* Pull-quote / callout */
+      .brief-pullquote {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        color: var(--text, #111111);
+        margin: 2.5rem 0;
+        padding-left: 1.5rem;
+        border-left: 2px solid var(--text, #111111);
+        max-width: 50ch;
+      }
+
+      /* Contrast CTA section — deep ink */
+      .brief-cta {
+        background: var(--ink, #050505);
+        color: var(--light-ink, #f5f4ef);
+        padding: clamp(4rem, 7vw, 6rem) 0;
+        margin-top: clamp(4rem, 6vw, 6rem);
+      }
+
+      .brief-cta .eyebrow {
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+      }
+
+      .brief-cta h2 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(2rem, 3.5vw, 2.75rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--light-ink, #f5f4ef);
+        margin: 0 0 1.25rem;
+        max-width: 22ch;
+      }
+
+      .brief-cta-deck {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        max-width: 56ch;
+        margin: 0 0 2.25rem;
+      }
+
+      .brief-cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+        align-items: center;
+      }
+
+      .brief-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.95rem 1.5rem;
+        background: var(--light-ink, #f5f4ef);
+        color: var(--ink, #050505);
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+        text-decoration: none;
+        border-radius: 999px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-btn:hover {
+          transform: translateY(-1px);
+          opacity: 0.92;
+        }
+      }
+
+      .brief-cta-secondary {
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--light-rule, rgba(245, 244, 239, 0.18));
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-secondary:hover {
+          color: var(--light-ink, #f5f4ef);
+          text-decoration-color: var(--light-ink, #f5f4ef);
+        }
+      }
+
+      /* Author block under CTA */
+      .brief-author {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--light-rule, rgba(245, 244, 239, 0.18));
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        max-width: 56ch;
+      }
+
+      .brief-author strong {
+        color: var(--light-ink, #f5f4ef);
+        font-weight: 700;
+      }
+
+      /* Mobile tweaks */
+      @media (max-width: 720px) {
+        .brief-pullquote {
+          padding-left: 1rem;
+          margin: 2rem 0;
+        }
+
+        .brief-cta-actions {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+
+        .brief-cta-btn {
+          width: 100%;
+          justify-content: center;
+        }
+
+        /* Force "is now forming." onto its own line on mobile */
+        .brief-title em {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#brief">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="shell header-shell">
+        <a class="brand-mark" href="/" aria-label="Imagine Peak Studios home">
+          <img
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt="Imagine Peak Studios"
+            width="42"
+            height="42"
+            decoding="async"
+          />
+        </a>
+        <nav class="brief-nav" aria-label="Primary">
+          <a href="/" class="brief-back-link">Imagine Peak Studios <span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="brief">
+      <article>
+        <section class="section brief-hero ambient-section">
+          <div class="shell reading-shell">
+            <div class="brief-hero-banner" aria-hidden="true">
+              <svg class="brief-waveform" id="brief-waveform-svg" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
+            </div>
+            <div class="eyebrow">Brief · For Labels &amp; A&amp;R</div>
+            <h1 class="brief-title">Streaming is the infrastructure.<br />The new front end <em>is now forming.</em></h1>
+            <p class="brief-deck">
+              How AI agents are reshaping music discovery, and what catalog labels, A&amp;R, and rights holders should be paying attention to now — not next year.
+            </p>
+            <p class="brief-byline">
+              By <span>Matthew Hartley</span> — Founder, Imagine Peak Studios
+            </p>
+          </div>
+        </section>
+
+        <section class="section ambient-section">
+          <div class="shell reading-shell">
+            <div class="brief-body">
+
+              <h2>The thesis</h2>
+              <p>
+                Streaming made music infinitely available and infinitely passive. Playlists became the discovery layer. The next layer is doing the opposite — structured, intent-driven, AI-mediated delivery. Agents like Claude, ChatGPT, and Perplexity are becoming the surface where listeners ask <em>"what should I listen to,"</em> and they don't ask in a way a playlist can answer.
+              </p>
+              <p>
+                The AI agent does <strong>dynamic matching</strong> between user intent and artist intent — pairing them in real time, in context. Artists who expose their catalog to those AI agents control how their work shows up in those moments. Traditional streaming platforms don't.
+              </p>
+
+              <p class="brief-pullquote">
+                The discovery layer is moving from <em>"what do users like"</em> to dynamic matching between user intent and artist intent.
+              </p>
+
+              <h2>Why now</h2>
+              <p>
+                Plain English first: <strong>MCP — the Model Context Protocol</strong> — is a standard that lets AI agents plug directly into external data sources. When an artist runs an MCP server, agents like Claude, ChatGPT, or Perplexity can query the catalog directly: songs, themes, recommended sequencing, even how the artist wants their music introduced. It's the protocol that makes the new front end possible.
+              </p>
+              <p>
+                The timeline:
+              </p>
+              <ul>
+                <li><strong>November 2024</strong> — Anthropic releases MCP. The standard exists.</li>
+                <li><strong>February 2025</strong> — Anthropic releases Claude Code. AI-assisted development starts becoming a daily-driver workflow.</li>
+                <li><strong>February 2026</strong> — Claude Opus 4.6 lands. Combined with Claude Code, AI code generation crosses into production quality and on-the-fly UI creation becomes viable. Effectively no barrier to entry for technical creators. <strong>Apps are being democratized.</strong> A single person can now ship real apps end-to-end.</li>
+                <li><strong>April 2026</strong> — The first artist-owned MCP server ships. Proof of all of the above, in production.</li>
+              </ul>
+              <p>
+                Throughout this period, AI agents (Claude, ChatGPT, Perplexity) have become primary discovery surfaces in technical and influential user pockets — the demand surface for what's now possible. None of the major DSPs have built this layer yet — or haven't announced it publicly. That's the window.
+              </p>
+
+              <h2>What it means for labels</h2>
+
+              <h3>Catalog activation</h3>
+              <p>
+                Existing catalogs can be reformatted as structured experiences — narrative arcs, chapter-based delivery, scene-aware metadata. The same recordings, presented through a different layer, become a new product. Legacy catalogs especially benefit: this is rights-light, distribution-heavy work that surfaces dormant value.
+              </p>
+
+              <h3>Discovery economics</h3>
+              <p>
+                As AI agents become primary discovery surfaces, the economics of how plays are valued and attributed will likely evolve. The playlist-driven royalty model assumes a finite set of curated lists. Agent-driven sessions are unbounded, contextual, and creator-defined. Labels should be thinking now about how royalty frameworks adapt.
+              </p>
+
+              <h3>IP &amp; control</h3>
+              <p>
+                Most <em>"AI for creators"</em> platforms today work by ingesting your bytes — songs, video, text — and licensing them broadly for training, derivatives, and reuse. Once the bytes are absorbed, control is gone in practice even if a contract claims otherwise.
+              </p>
+              <p>
+                A copyright-preserving alternative exists: architectures where AI agents see metadata and a proxied URL only, never the source bytes. Access is verified per-request; pausing or unpublishing kills it instantly. Labels retain rights <em>and</em> retain control over how those rights flow through the new discovery surface.
+              </p>
+              <p>
+                Rights without exposure to the new discovery surface are worth less every quarter. Whoever <em>does</em> expose the catalog to agents — through a copyright-preserving architecture, not by feeding bytes into a training pipeline — owns the recommendation layer. That's a strategic question, not a technical one.
+              </p>
+
+              <h2>What it means for A&amp;R</h2>
+              <p>
+                The artists who break in this layer won't all come from TikTok, Instagram, or YouTube. Some will come from AI clients surfacing artists with rich, structured catalogs — chapter-based releases, narrative-aware metadata, intent that an agent can articulate.
+              </p>
+              <p>
+                The new skill stack to evaluate isn't just songcraft. It's catalog architecture: can this artist think of their work as a structured experience, not just a track dump? Can they define what an agent should <em>say</em> when introducing their music? That's an A&amp;R question now.
+              </p>
+
+              <h2>Where Harmonic Wave fits</h2>
+              <p>
+                <a href="https://harmonicwave.ai" target="_blank" rel="noopener noreferrer">Harmonic Wave</a> is the platform behind the first artist-owned MCP — built to expose a music catalog as an AI-native structured experience. It launched in April 2026 with the release of <em>The Time Is Now</em>, an album produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and released chapter by chapter rather than as a single drop.
+              </p>
+
+              <h3>Why use Harmonic Wave when you could build your own?</h3>
+              <p>
+                Because the platform itself is not prompt-and-go. <em>"Here's a prompt, generate me an MCP platform"</em> doesn't work. Real platforms take months of architectural decisions, schema iteration, integration work, and active management — built and maintained by an experienced team, evolving continuously as the protocol layer evolves.
+              </p>
+              <p>
+                <strong>But once a real platform exists, the app side <em>is</em> prompt-and-go.</strong> That's the asymmetry: someone does the hard architecture work once, and everyone after gets to spin up listening experiences with the new democratized app tooling.
+              </p>
+              <p>
+                <strong>The trick is decoupling.</strong> Harmonic Wave architecturally separates the app layer from the infrastructure layer — and lets AI generate the app layer on the fly. The infrastructure (the MCP server, the schema, the catalog data) stays put. The apps (players, listening experiences, voice presentations) get spun up dynamically, whenever and however they're needed.
+              </p>
+              <p>
+                <strong>Apps come and go. The infrastructure stays.</strong> Listeners may interact with a catalog through Claude today, ChatGPT or Perplexity tomorrow, a custom narrative-aware player next year, a voice agent the year after. The apps are disposable. The MCP server, the schema, the architecture — that's where the durable value sits. That's what Harmonic Wave is.
+              </p>
+              <p>
+                The MCP server is the easy part. The hard parts are:
+              </p>
+              <ul>
+                <li><strong>Copyright-preserving architecture.</strong> AI agents never see your bytes — only metadata and per-request proxied URLs. Bytes stay in your storage. Pausing or unpublishing kills access immediately. No training-corpus exposure, no signed-URL leak risk, no <em>"uploaded into a model"</em> loss of control. Patent-pending.</li>
+                <li><strong>A standardized schema</strong> so every catalog interoperates with every player. One-off MCPs don't.</li>
+                <li><strong>A universal player generator</strong> that produces custom listening experiences from any catalog on the platform — narrative-aware, audio-reactive, voice-narrated.</li>
+                <li><strong>Audio + delivery infrastructure.</strong> Signed-URL streaming, release gating, chapter-aware access control. Full stack from metadata to bytes.</li>
+                <li><strong>AI narration baked in.</strong> Artist-defined voiceover that introduces, contextualizes, and threads songs together. The catalog speaks with its own voice on every surface.</li>
+                <li><strong>Distribution everywhere.</strong> One MCP server, accessible from any AI client — Claude, ChatGPT, Perplexity, enterprise tools. Expose once, surface everywhere.</li>
+                <li><strong>Cross-format extensibility.</strong> Music today. Podcasts, video, narrative media tomorrow. Multi-format catalogs in one place.</li>
+                <li><strong>Team-maintained architecture</strong> that evolves with MCP, agents, and listening surfaces. Your catalog stays current without tracking every protocol change.</li>
+              </ul>
+              <p>
+                The platform is currently in open beta with a v1.0 planned launch in May 2026. It extends beyond music into podcasts, video, and narrative media — anywhere structured AI delivery matters. The underlying technology is patent pending.
+              </p>
+
+              <h2>What to do this quarter</h2>
+              <ul>
+                <li><strong>Experience it firsthand.</strong> Open <a href="https://experience.matthewhartleymusic.com" target="_blank" rel="noopener noreferrer">experience.matthewhartleymusic.com</a> in any browser — the live Experience Media Player for <em>The Time Is Now</em> debut album. This is what Harmonic Wave–powered listening feels like.</li>
+                <li><strong>Inspect the first artist-owned MCP server</strong> — connect it to Claude, ChatGPT, Perplexity, or any compatible AI client and stream the available catalog yourself: <a href="https://github.com/imaginepeakstudios/matthewhartleymusic-mcp" target="_blank" rel="noopener noreferrer">github.com/imaginepeakstudios/matthewhartleymusic-mcp</a></li>
+                <li><strong>Visit the artist site</strong> for context: <a href="https://matthewhartleymusic.com" target="_blank" rel="noopener noreferrer">matthewhartleymusic.com</a></li>
+                <li><strong>Book a working session</strong> if your team is wrestling with AI strategy, catalog activation, or A&amp;R direction in this layer.</li>
+              </ul>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="brief-cta">
+          <div class="shell reading-shell">
+            <div class="eyebrow">Talk to Matthew</div>
+            <h2>Twenty minutes. No pitch. Your questions.</h2>
+            <p class="brief-cta-deck">
+              A short working session for A&amp;R, label leadership, and catalog strategy folks thinking about how this shift affects your roster, your catalog, or your business model. These are conversations, not pitches.
+            </p>
+            <div class="brief-cta-actions">
+              <a
+                class="brief-cta-btn"
+                href="https://calendly.com/matthew-hartley/strategy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a 20-min strategy call <span aria-hidden="true">→</span>
+              </a>
+              <a
+                class="brief-cta-secondary"
+                href="mailto:hello@imaginepeakstudios.com?subject=Brief%3A%20Labels%20%26%20AI%20Discovery"
+              >
+                Or reply by email
+              </a>
+            </div>
+            <div class="brief-author">
+              <p>
+                <strong>Matthew Hartley</strong> is the founder of Imagine Peak Studios — a consulting practice covering product strategy, sonic direction, and AI-assisted systems development. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind <em>The Time Is Now</em>, the first artist-owned MCP server.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-shell">
+        <div class="footer-brand">
+          <img
+            class="footer-icon"
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt=""
+            width="42"
+            height="42"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>Imagine Peak Studios</p>
+        </div>
+        <p class="footer-meta"><small>&copy; 2026 All rights reserved.</small></p>
+      </div>
+    </footer>
+
+    <aside
+      class="consent-banner"
+      id="consent-banner"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Privacy preferences"
+      hidden
+    >
+      <div class="shell consent-shell">
+        <p class="consent-copy">
+          We use a small amount of analytics to understand how the site is used. No tracking until you say so.
+        </p>
+        <div class="consent-actions">
+          <button type="button" class="consent-btn consent-decline" data-consent="denied">Decline</button>
+          <button type="button" class="consent-btn consent-accept" data-consent="granted">Accept</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="/script.js"></script>
+    <script>
+      // Editorial waveform banner — frequency lines that breathe.
+      // Bars pulse in height following a deterministic multi-frequency wave,
+      // continuously phase-shifted so it animates without jitter or randomness.
+      (function () {
+        var svg = document.getElementById('brief-waveform-svg');
+        if (!svg) return;
+        var ns = 'http://www.w3.org/2000/svg';
+        var bars = 60;
+        var spacing = 1200 / (bars - 1);
+        var rects = [];
+
+        for (var i = 0; i < bars; i++) {
+          var rect = document.createElementNS(ns, 'rect');
+          rect.setAttribute('x', i * spacing);
+          rect.setAttribute('width', 4);
+          svg.appendChild(rect);
+          rects.push(rect);
+        }
+
+        function setHeight(rect, t, phase) {
+          var h =
+            14 +
+            28 * Math.abs(Math.sin(t * Math.PI * 2.5 + phase)) +
+            8 * Math.sin(t * Math.PI * 6.7 + phase * 1.7);
+          if (h < 6) h = 6;
+          if (h > 64) h = 64;
+          rect.setAttribute('y', 40 - h / 2);
+          rect.setAttribute('height', h);
+        }
+
+        // Initial render — looks correct even before animation starts
+        for (var j = 0; j < bars; j++) {
+          setHeight(rects[j], j / (bars - 1), 0);
+        }
+
+        // Respect reduced-motion preference — leave the static waveform in place
+        var reduceMotion =
+          window.matchMedia &&
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) return;
+
+        function tick(time) {
+          var phase = time * 0.0008;
+          for (var k = 0; k < bars; k++) {
+            setHeight(rects[k], k / (bars - 1), phase);
+          }
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      })();
+    </script>
+  </body>
+</html>

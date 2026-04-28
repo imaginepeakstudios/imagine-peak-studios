@@ -1,0 +1,20 @@
+# Cloudflare Wrangler local cache
+.wrangler/
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Local Claude project context (may include deploy commands / IDs)
+CLAUDE.md
+
+# Local-only Claude settings
+.claude/
+
+# Local scratch
+*.local.*
+*.bak
