@@ -601,9 +601,15 @@ p {
 
 .intro {
   border-top: 1px solid var(--rule);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(243, 242, 237, 0.55)),
-    var(--bg);
+  background: var(--bg-soft);
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.028);
+  pointer-events: none;
 }
 
 .intro-rule {
@@ -819,7 +825,7 @@ p {
 }
 
 .credibility {
-  background: var(--bg-soft);
+  background: var(--bg);
 }
 
 .credibility-grid {
@@ -846,7 +852,7 @@ p {
   padding: 0 1rem;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.62);
+  background: #e7e7e7;
   color: rgba(17, 17, 17, 0.88);
   font-size: 0.82rem;
   font-weight: 700;
@@ -915,9 +921,7 @@ p {
 }
 
 .contact {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(243, 242, 237, 0.75)),
-    var(--bg);
+  background: var(--bg);
 }
 
 .contact .reading-shell {
@@ -950,6 +954,20 @@ p {
 .sub-footer {
   background: var(--bg-soft);
   border-top: 1px solid var(--rule);
+  position: relative;
+  overflow: clip;
+}
+
+.sub-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.028);
+  pointer-events: none;
+}
+
+.sub-footer-shell {
+  position: relative;
 }
 
 .sub-footer-shell {
