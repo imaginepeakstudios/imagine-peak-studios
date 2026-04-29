@@ -947,6 +947,59 @@ p {
   inset: 42px;
 }
 
+.sub-footer {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--rule);
+}
+
+.sub-footer-shell {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 13rem;
+  align-items: center;
+  min-height: 184px;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.sub-footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: var(--text);
+  border-left: 1px solid var(--rule);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.sub-footer-link:hover {
+  color: var(--ink);
+  border-left-color: var(--ink);
+  transform: translateX(2px);
+}
+
+.sub-footer-eyebrow {
+  font-size: var(--meta);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sub-footer-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.arrow-glyph {
+  font-variant-emoji: text;
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI Symbol", sans-serif;
+  display: inline-block;
+}
+
 .site-footer {
   border-top: 1px solid var(--rule);
   background: var(--ink);
@@ -1305,6 +1358,36 @@ p {
 
   .footer-shell p {
     font-size: 10pt;
+  }
+
+  .sub-footer-shell {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: stretch;
+    gap: 0.75rem;
+    min-height: 0;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .sub-footer-link {
+    border-left: none;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .sub-footer-link:hover {
+    transform: none;
+  }
+
+  .sub-footer-eyebrow {
+    font-size: 0.56rem;
+    letter-spacing: 0.1em;
+  }
+
+  .sub-footer-title {
+    font-size: 0.82rem;
   }
 
   .consent-shell {
