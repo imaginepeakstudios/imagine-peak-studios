@@ -22,7 +22,7 @@ Plain English first: **MCP — the Model Context Protocol** — is a standard th
 The timeline:
 
 - **November 2024** — Anthropic releases MCP. The standard exists.
-- **February 2025** — Anthropic releases Claude Code. AI-assisted development starts becoming a daily-driver workflow.
+- **February 2025** — Anthropic releases Claude Code. AI engineering starts becoming a daily-driver workflow.
 - **February 2026** — Claude Opus 4.6 lands. Combined with Claude Code, AI code generation crosses into production quality and on-the-fly UI creation becomes viable. Effectively no barrier to entry for technical creators. **Apps are being democratized.** A single person can now ship real apps end-to-end.
 - **April 2026** — The first artist-owned MCP server ships. Proof of all of the above, in production.
 
@@ -99,6 +99,6 @@ A short working session for A&R, label leadership, and catalog strategy folks th
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, sonic direction, and AI-assisted systems development. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, sonic direction, and AI engineering. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*

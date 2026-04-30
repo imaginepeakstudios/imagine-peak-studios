@@ -1,6 +1,6 @@
 # Imagine Peak Studios
 
-> A consulting practice directing and building AI-native products for founders and teams — from concept to live system. Product strategy, sonic direction, and AI-assisted development under one roof. Founded by Matthew Hartley.
+> A consulting practice directing and building AI-native products for founders and teams — from concept to live system. Product strategy, sonic direction, and AI engineering under one roof. Founded by Matthew Hartley.
 
 ## Background
 
@@ -37,5 +37,5 @@ Press releases, media coverage, and announcements from Imagine Peak Studios.
 
 - [Homepage](https://imaginepeakstudios.com/): Hero, projects, services, credibility, method, contact
 - [Services](https://imaginepeakstudios.com/#services): Product Strategy, Sonic Direction, Systems & Experience Development
-- [Method](https://imaginepeakstudios.com/#method): Human direction. AI-assisted execution. Tools include Claude Code, Codex, Gemini, ElevenLabs, Suno.
+- [Method](https://imaginepeakstudios.com/#method): Human direction. AI engineering. Tools include Claude Code, Codex, Gemini, ElevenLabs, Suno.
 - [Contact](mailto:hello@imaginepeakstudios.com): hello@imaginepeakstudios.com
