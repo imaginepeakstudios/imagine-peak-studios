@@ -28,6 +28,14 @@ The timeline:
 
 Throughout this period, AI agents (Claude, ChatGPT, Perplexity) have become primary discovery surfaces in technical and influential user pockets — the demand surface for what's now possible. None of the major DSPs have built this layer yet — or haven't announced it publicly. That's the window.
 
+## The hidden risk of staying in the streaming model
+
+DSPs solved distribution. They made global reach normal, measurable, and accessible. But they also introduced a new set of dependencies that labels, artists, and rights holders now have to manage.
+
+Artists no longer fully control how their work is discovered, experienced, or monetized. Streaming revenue is shaped by platform-wide activity, not only by the relationship between an artist and their own listeners. Discovery is mediated by playlists and recommendation systems that tend to reward scale. The format itself can bend creative incentives toward shorter, repeatable, passive-consumption tracks. And the rise of streaming fraud, AI-generated spam, impersonation, and distributor loopholes is diluting both attention and earnings.
+
+None of this means streaming is broken. It means the model has tradeoffs. The artist's relationship with the audience is increasingly mediated — and often abstracted — by the platform itself. The next phase of discovery will favor rights holders who can preserve the reach of streaming while rebuilding control around identity, context, and direct AI-native presentation — without handing source media to the discovery layer.
+
 ## What it means for labels
 
 ### Catalog activation
@@ -44,7 +52,9 @@ Most *"AI for creators"* platforms today work by ingesting your bytes — songs,
 
 A copyright-preserving alternative exists: architectures where AI agents see metadata and a proxied URL only, never the source bytes. Access is verified per-request; pausing or unpublishing kills it instantly. Labels retain rights *and* retain control over how those rights flow through the new discovery surface.
 
-Rights without exposure to the new discovery surface are worth less every quarter. Whoever *does* expose the catalog to agents — through a copyright-preserving architecture, not by feeding bytes into a training pipeline — owns the recommendation layer. That's a strategic question, not a technical one.
+This is the key distinction: the catalog can become discoverable, narratable, and playable by AI agents without becoming training material, derivative fodder, or an ungoverned file floating around someone else's system. Copyright preservation is not a defensive feature. It is the condition that lets rights holders participate in AI-native discovery without surrendering control of the work.
+
+Rights without exposure to the new discovery surface are worth less every quarter. Exposure without copyright preservation creates a different problem: visibility at the cost of control. Whoever *does* expose the catalog to agents — through a copyright-preserving architecture, not by feeding bytes into a training pipeline — owns the recommendation layer. That's a strategic question, not a technical one.
 
 ## What it means for A&R
 
@@ -54,7 +64,7 @@ The new skill stack to evaluate isn't just songcraft. It's catalog architecture:
 
 ## Where Harmonic Wave fits
 
-[Harmonic Wave](https://harmonicwave.ai) is the platform behind the first artist-owned MCP — built to expose a music catalog as an AI-native structured experience. It launched in April 2026 with the release of *The Time Is Now*, an album produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and released chapter by chapter rather than as a single drop.
+[Harmonic Wave](https://harmonicwave.ai) is the platform behind the first artist-owned MCP — built to expose a music catalog as an AI-native structured experience while preserving copyright control over the underlying media. It launched in April 2026 with the release of *The Time Is Now*, an album produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and released chapter by chapter rather than as a single drop.
 
 ### Why use Harmonic Wave when you could build your own?
 
