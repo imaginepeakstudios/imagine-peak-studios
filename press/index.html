@@ -97,21 +97,73 @@
         padding-bottom: clamp(4rem, 7vw, 6rem);
       }
 
-      .press-empty {
-        font-family: 'Manrope', system-ui, sans-serif;
-        font-size: 1.05rem;
-        line-height: 1.55;
-        color: var(--muted, #626262);
-        max-width: 60ch;
+      .press-card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
         padding: 2rem 0;
         border-top: 1px solid var(--rule, #dfded7);
-        border-bottom: 1px solid var(--rule, #dfded7);
+        transition: opacity 0.2s ease;
       }
-      .press-empty em {
+      .press-card + .press-card { border-top: 1px solid var(--rule, #dfded7); }
+      .press-card:last-of-type { border-bottom: 1px solid var(--rule, #dfded7); }
+
+      @media (hover: hover) and (pointer: fine) {
+        .press-card:hover { opacity: 0.7; }
+        .press-card:hover .press-card-cta { text-decoration-color: currentColor; }
+      }
+
+      .press-card-meta {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--muted, #626262);
+        margin-bottom: 0.75rem;
+      }
+      .press-card-meta .tag {
+        color: var(--text, #111111);
+        font-weight: 700;
+      }
+      .press-card-headline {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.5rem, 2.6vw, 2rem);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--text, #111111);
+        margin: 0 0 0.75rem;
+        max-width: 36ch;
+      }
+      .press-card-headline em {
         font-family: 'Instrument Serif', Georgia, serif;
         font-style: italic;
-        color: var(--text, #111111);
+        font-weight: 400;
       }
+      .press-card-deck {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: 1rem;
+        line-height: 1.55;
+        color: var(--muted, #626262);
+        max-width: 64ch;
+        margin: 0 0 1rem;
+      }
+      .press-card-cta {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--text, #111111);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--rule, #dfded7);
+        transition: text-decoration-color 0.2s ease;
+      }
+
+      @media (max-width: 720px) {
+        .press-card-meta { flex-wrap: wrap; gap: 0.5rem 1rem; }
+      }
+
       .press-contact {
         margin-top: clamp(2rem, 4vw, 3rem);
         font-family: 'Manrope', system-ui, sans-serif;
@@ -178,9 +230,17 @@
       <section class="section press-list ambient-section">
         <div class="shell reading-shell">
 
-          <p class="press-empty">
-            <em>First release coming soon.</em> The launch announcement for <em>The Time Is Now</em> — Matthew Hartley's debut album, releasing chapter by chapter on the Harmonic Wave platform — goes out this week.
-          </p>
+          <a class="press-card" href="/press/the-time-is-now-launch">
+            <div class="press-card-meta">
+              <span>May 5, 2026</span>
+              <span class="tag">Press release</span>
+            </div>
+            <h2 class="press-card-headline">Musician Matthew Hartley releases <em>The Time Is Now</em> as a chapter-based music experience on AI platform Harmonic Wave.</h2>
+            <p class="press-card-deck">
+              New album unfolds as a story told through music, released chapter by chapter on Harmonic Wave. Distributed via PR Newswire.
+            </p>
+            <span class="press-card-cta">Read release →</span>
+          </a>
 
           <p class="press-contact">
             For media inquiries: <a href="mailto:hello@imaginepeakstudios.com?subject=Press%20inquiry">hello@imaginepeakstudios.com</a>
