@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming was built for apps. The next era will be built for agents. — A Thesis Brief · Imagine Peak Studios</title>
+    <meta
+      name="description"
+      content="A thesis brief on why AI agents — not apps — are the next interface layer for media, and what catalogs built for that shift will look like. By Matthew Hartley, Imagine Peak Studios."
+    />
+    <meta name="author" content="Matthew Hartley, Imagine Peak Studios" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://imaginepeakstudios.com/insights/built-for-agents" />
+    <link rel="alternate" type="text/markdown" href="https://imaginepeakstudios.com/insights/built-for-agents.md" title="Markdown version" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Imagine Peak Studios" />
+    <meta property="og:title" content="Streaming was built for apps. The next era will be built for agents." />
+    <meta
+      property="og:description"
+      content="AI agents are becoming the next interface layer for media. The unit of delivery shifts from a file to a structured experience — and the architectures that let creators keep control will define the era."
+    />
+    <meta property="og:url" content="https://imaginepeakstudios.com/insights/built-for-agents" />
+    <meta
+      property="og:image"
+      content="https://imaginepeakstudios.com/imagine_peak_studios_banner_og.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="article:author" content="Matthew Hartley" />
+    <meta property="article:publisher" content="Imagine Peak Studios" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Streaming was built for apps. The next era will be built for agents." />
+    <meta
+      name="twitter:description"
+      content="AI agents are becoming the next interface layer for media. The unit of delivery shifts from a file to a structured experience — and the architectures that let creators keep control will define the era."
+    />
+    <meta
+      name="twitter:image"
+      content="https://imaginepeakstudios.com/imagine_peak_studios_banner_og.jpg"
+    />
+    <meta name="theme-color" content="#050505" />
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 — mirrors main site -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      var ipsConsent = null;
+      try { ipsConsent = localStorage.getItem('ips-consent'); } catch (e) {}
+
+      gtag('consent', 'default', {
+        ad_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_user_data: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_personalization: ipsConsent === 'granted' ? 'granted' : 'denied',
+        analytics_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        functionality_storage: 'granted',
+        personalization_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        security_storage: 'granted'
+      });
+
+      gtag('js', new Date());
+      gtag('config', 'G-YC7JVM7M4E');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC7JVM7M4E"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Instrument+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Streaming was built for apps. The next era will be built for agents.",
+        "description": "AI agents are becoming the next interface layer for media. The unit of delivery shifts from a file to a structured experience — and the architectures that let creators keep control will define the era.",
+        "url": "https://imaginepeakstudios.com/insights/built-for-agents",
+        "author": {
+          "@type": "Person",
+          "name": "Matthew Hartley",
+          "url": "https://imaginepeakstudios.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Imagine Peak Studios",
+          "url": "https://imaginepeakstudios.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://imaginepeakstudios.com/imagine_peak_studios_icon_800x800.png"
+          }
+        },
+        "image": "https://imaginepeakstudios.com/imagine_peak_studios_banner_og.jpg",
+        "mainEntityOfPage": "https://imaginepeakstudios.com/insights/built-for-agents"
+      }
+    </script>
+
+    <style>
+      /* -----------------------------------------------------------------
+         Brief-specific overrides — extends styles.css design tokens.
+         Mirrors labels-ai-discovery.html structure; replaces the waveform
+         banner with a network-nodes-and-pulses animation.
+         ----------------------------------------------------------------- */
+
+      .brief-hero {
+        background: var(--bg-soft, #f3f2ed);
+        padding-top: clamp(5rem, 10vw, 8rem);
+        padding-bottom: clamp(3rem, 6vw, 5rem);
+      }
+
+      .brief-hero .eyebrow {
+        margin-bottom: 1.5rem;
+      }
+
+      /* Abstract network banner — nodes with traveling pulses */
+      .brief-hero-banner {
+        width: 100%;
+        height: clamp(56px, 7vw, 88px);
+        margin-bottom: clamp(2.5rem, 5vw, 4rem);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        color: var(--muted, #626262);
+      }
+
+      .brief-network {
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0.85;
+      }
+
+      .brief-network .node {
+        fill: currentColor;
+        opacity: 0.7;
+      }
+
+      .brief-network .link {
+        stroke: currentColor;
+        stroke-width: 0.6;
+        opacity: 0.32;
+      }
+
+      .brief-network .pulse {
+        fill: var(--text, #111111);
+      }
+
+      .brief-network .pulse-halo {
+        fill: currentColor;
+      }
+
+      /* Slow, gentle breathing — keeps the network feeling alive
+         even between pulses without being distracting */
+      @keyframes briefNetworkBreath {
+        0%, 100% { opacity: 0.78; }
+        50% { opacity: 0.92; }
+      }
+
+      .brief-network {
+        animation: briefNetworkBreath 16s ease-in-out infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .brief-network {
+          animation: none;
+        }
+      }
+
+      .brief-title {
+        font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--text, #111111);
+        margin: 0 0 1.5rem;
+        max-width: 32ch;
+      }
+
+      .brief-title em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+      }
+
+      .brief-deck {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+        line-height: 1.55;
+        color: var(--muted, #626262);
+        max-width: 60ch;
+        margin: 0 0 2rem;
+      }
+
+      .brief-byline {
+        font-size: 0.85rem;
+        letter-spacing: 0.02em;
+        color: var(--muted, #626262);
+        text-transform: none;
+        margin: 0;
+      }
+
+      .brief-byline span {
+        color: var(--text, #111111);
+        font-weight: 700;
+      }
+
+      .brief-rule {
+        border: 0;
+        border-top: 1px solid var(--rule, #dfded7);
+        margin: clamp(3rem, 5vw, 5rem) 0;
+      }
+
+      /* Article body */
+      .brief-body {
+        font-size: 1.125rem;
+        line-height: 1.65;
+        color: var(--text, #111111);
+      }
+
+      /* Constrain prose for readability; let headings extend wider */
+      .brief-body p,
+      .brief-body ul {
+        max-width: 64ch;
+      }
+
+      .brief-body h2 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+        margin: 3rem 0 1rem;
+        max-width: none; /* override IPS global h2 max-width: 14ch */
+      }
+
+      .brief-body h2:first-child {
+        margin-top: 0;
+      }
+
+      .brief-body h3 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+        line-height: 1.4;
+        margin: 1.75rem 0 0.5rem;
+        max-width: none; /* override IPS global h3 inheritance if any */
+        color: var(--text, #111111);
+      }
+
+      .brief-body p {
+        margin: 0 0 1.25rem;
+      }
+
+      .brief-body p + p {
+        margin-top: 0;
+      }
+
+      .brief-body ul {
+        margin: 0 0 1.5rem;
+        padding-left: 1.25rem;
+      }
+
+      .brief-body ul li {
+        margin: 0 0 0.5rem;
+      }
+
+      .brief-body strong {
+        font-weight: 700;
+        color: var(--text, #111111);
+      }
+
+      .brief-body em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.08em;
+      }
+
+      .brief-body a {
+        color: #a04525;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1.5px;
+        text-decoration-color: rgba(160, 69, 37, 0.45);
+        transition: color 0.2s ease, text-decoration-color 0.2s ease, text-decoration-thickness 0.2s ease;
+      }
+
+      .brief-body a:hover {
+        color: #7a3318;
+        text-decoration-color: #7a3318;
+        text-decoration-thickness: 2px;
+      }
+
+      /* External links get a small ↗ glyph */
+      .brief-body a[href^="http"]::after,
+      .brief-body a[href^="//"]::after {
+        content: "↗";
+        display: inline-block;
+        margin-left: 0.15em;
+        font-size: 0.85em;
+        text-decoration: none;
+        color: var(--muted, #626262);
+      }
+
+      /* Pull-quote / callout */
+      .brief-pullquote {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        color: var(--text, #111111);
+        margin: 2.5rem 0;
+        padding-left: 1.5rem;
+        border-left: 2px solid var(--text, #111111);
+        max-width: 50ch;
+      }
+
+      /* Contrast CTA section — deep ink */
+      .brief-cta {
+        background: var(--ink, #050505);
+        color: var(--light-ink, #f5f4ef);
+        padding: clamp(4rem, 7vw, 6rem) 0;
+        margin-top: clamp(4rem, 6vw, 6rem);
+      }
+
+      .brief-cta .eyebrow {
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+      }
+
+      .brief-cta h2 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(2rem, 3.5vw, 2.75rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--light-ink, #f5f4ef);
+        margin: 0 0 1.25rem;
+        max-width: 22ch;
+      }
+
+      .brief-cta-deck {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        max-width: 56ch;
+        margin: 0 0 2.25rem;
+      }
+
+      .brief-cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+        align-items: center;
+      }
+
+      .brief-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.95rem 1.5rem;
+        background: var(--light-ink, #f5f4ef);
+        color: var(--ink, #050505);
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+        text-decoration: none;
+        border-radius: 999px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-btn:hover {
+          transform: translateY(-1px);
+          opacity: 0.92;
+        }
+      }
+
+      .brief-cta-secondary {
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--light-rule, rgba(245, 244, 239, 0.18));
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-secondary:hover {
+          color: var(--light-ink, #f5f4ef);
+          text-decoration-color: var(--light-ink, #f5f4ef);
+        }
+      }
+
+      /* Author block under CTA */
+      .brief-author {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--light-rule, rgba(245, 244, 239, 0.18));
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        max-width: 56ch;
+      }
+
+      .brief-author strong {
+        color: var(--light-ink, #f5f4ef);
+        font-weight: 700;
+      }
+
+      /* Mobile tweaks */
+      @media (max-width: 720px) {
+        .brief-pullquote {
+          padding-left: 1rem;
+          margin: 2rem 0;
+        }
+
+        .brief-cta-actions {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+
+        .brief-cta-btn {
+          width: 100%;
+          justify-content: center;
+        }
+
+        /* Force "agents." onto its own line on mobile */
+        .brief-title em {
+          display: block;
+        }
+
+        /* Hide external-link ↗ glyph on mobile — Manrope doesn't ship U+2197,
+           so the fallback glyph mismatches surrounding type weight. The
+           target="_blank" affordance is handled by the browser. */
+        .brief-body a[href^="http"]::after,
+        .brief-body a[href^="//"]::after {
+          content: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#brief">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="shell header-shell">
+        <a class="brand-mark" href="/" aria-label="Imagine Peak Studios home">
+          <img
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt="Imagine Peak Studios"
+            width="42"
+            height="42"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="https://github.com/imaginepeakstudios" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+          <a href="/insights/">Insights</a>
+          <a href="/press/">Press</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+
+    <main id="brief">
+      <article>
+        <section class="section brief-hero ambient-section">
+          <div class="shell reading-shell">
+            <div class="brief-hero-banner" aria-hidden="true">
+              <svg class="brief-network" id="brief-network-svg" viewBox="0 0 1400 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"></svg>
+            </div>
+            <div class="eyebrow">Brief · The Thesis</div>
+            <h1 class="brief-title">Streaming&nbsp;was&nbsp;built for apps.<br />The next era will be built for <em>agents.</em></h1>
+            <p class="brief-deck">
+              AI agents — not apps — are the next interface layer for media. The catalogs built for that shift will look fundamentally different from the ones built for streaming.
+            </p>
+            <p class="brief-byline">
+              By <span>Matthew Hartley</span> — Founder, Imagine Peak Studios
+            </p>
+          </div>
+        </section>
+
+        <section class="section ambient-section">
+          <div class="shell reading-shell">
+            <div class="brief-body">
+
+              <h2>The thesis</h2>
+              <p>
+                Every era of consumer media is defined by its interface. Radio gave us the program. Television gave us the channel. The web gave us the page. Streaming gave us the app — a glass surface stocked with infinite content, sorted by playlists or feeds, browsed by users, monetized per stream.
+              </p>
+              <p>
+                This applies across all streaming — audio and video, music and film, podcasts and shows. Music is the anchor example throughout this brief because the first proof shipped is a music catalog. The shift itself is structural, not genre-specific.
+              </p>
+              <p>
+                Apps were the right interface for a world where the constraint was <em>access</em>. Streaming solved that. The catalog is now infinite, instant, and global. But infinite access made attention the scarce resource, and apps don't allocate attention well — they leave it to the user to figure out, and most users don't.
+              </p>
+              <p>
+                AI agents change the constraint. They don't sort content; they interpret intent. They don't ask the user to scroll; they ask what the user wants and assemble the answer. The interface is no longer a screen full of choices. It's a conversation that produces an experience.
+              </p>
+
+              <p class="brief-pullquote">
+                Streaming optimized access. Agents will optimize delivery. The thing being delivered is no longer a file — it's a structured experience.
+              </p>
+
+              <h2>Streaming optimized access. Agents will optimize delivery.</h2>
+              <p>
+                The streaming model assumes the user does the work. Open the app, search or browse, pick something, hit play. The platform's job is keeping the catalog navigable; the user's job is choosing.
+              </p>
+              <p>
+                Agents invert that. The user says <em>"I want something that feels like the end of a long week"</em> — and the agent does the matching. For a music catalog, the answer might be a quiet album with chapter intros. For film, a curated double-feature with framing context. The medium is incidental; the interaction pattern is the same. Catalog navigation becomes catalog interpretation. The unit of delivery is no longer <em>the file the user clicked</em>; it's <em>the experience the agent assembled</em>.
+              </p>
+              <p>
+                Apps are still useful — but they stop being the primary surface. They become one of many client experiences hanging off a deeper layer where catalogs are exposed in structured, agent-readable form.
+              </p>
+
+              <h2>Why now</h2>
+              <p>
+                The shift is happening because the protocol layer finally exists.
+              </p>
+              <ul>
+                <li><strong>November 2024</strong> — Anthropic releases the Model Context Protocol (MCP). For the first time, AI agents can plug directly into external data sources through a standard interface.</li>
+                <li><strong>February 2025</strong> — Claude Code lands. AI engineering becomes daily-driver workflow.</li>
+                <li><strong>February 2026</strong> — Claude Opus 4.6 ships. AI code generation crosses into production quality. App-building gets democratized — a single person can ship real apps end-to-end.</li>
+                <li><strong>April 2026</strong> — The first artist-owned MCP server goes live. Catalog-as-agent-readable goes from concept to production.</li>
+              </ul>
+              <p>
+                In parallel, AI agents (Claude, ChatGPT, Gemini) became real discovery surfaces in technical and influential user pockets — the demand side maturing alongside the supply side. Major platforms haven't built this layer yet, or haven't announced it. That asymmetry is the window.
+              </p>
+              <p>
+                MCP is the protocol that opened the door. The protocol layer will keep evolving — successors will appear, standards will converge — but the interface shift is structural. What's built today against MCP transfers to what comes next.
+              </p>
+
+              <h2>On the ground</h2>
+              <p>
+                The thesis is not speculative. As of April 2026:
+              </p>
+              <ul>
+                <li>A working artist-owned MCP server is live in production at <a href="https://github.com/imaginepeakstudios/matthewhartleymusic-mcp" target="_blank" rel="noopener noreferrer">github.com/imaginepeakstudios/matthewhartleymusic-mcp</a>. It connects to Claude, ChatGPT, Gemini, or any compatible AI client.</li>
+                <li>A reference Experience Player driven by that server is live at <a href="https://experience.matthewhartleymusic.com" target="_blank" rel="noopener noreferrer">experience.matthewhartleymusic.com</a>.</li>
+                <li>The catalog behind both — <em>The Time Is Now</em>, debut album by Matthew Hartley — was produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and released chapter by chapter rather than as a single drop.</li>
+                <li>The underlying architecture is patent pending.</li>
+              </ul>
+              <p>
+                This is the proof of concept, in production, available for anyone to inspect — the first artist-owned MCP catalog to ship publicly.
+              </p>
+
+              <h2>What changes when the interface is an agent</h2>
+              <p>
+                When an agent is the interface, three things change about how media works.
+              </p>
+
+              <h3>Interpretation replaces browsing</h3>
+              <p>
+                The agent reads metadata, themes, sequencing intent, and creator-defined context, then matches it to user intent. There is no list to scroll. The output is a single delivered experience, not an array of choices to pick between.
+              </p>
+
+              <h3>Sessions replace plays</h3>
+              <p>
+                A play is a unit of streaming — one file, one count. A session is a unit of agent delivery — a curated sequence with introductions, transitions, and context. Sessions are unbounded, contextual, and shaped by intent. The economics that follow will look different from per-play royalties.
+              </p>
+
+              <h3>Surfaces multiply</h3>
+              <p>
+                The same catalog can be reached through Claude today, ChatGPT or Gemini tomorrow, a custom narrative-aware player next year, a voice agent the year after. The interface is no longer the app — it's whatever client the listener happens to be in.
+              </p>
+
+              <h2>From passive content to structured experience</h2>
+              <p>
+                Streaming treats a catalog as a list of files. Agents need it to be more than that.
+              </p>
+              <p>
+                A structured catalog defines:
+              </p>
+              <ul>
+                <li><strong>Narrative arcs</strong> — the order, the chapters, the emotional progression</li>
+                <li><strong>Context</strong> — what each piece is about, what the creator intended, when it should be introduced</li>
+                <li><strong>Sequencing intent</strong> — how the agent should string pieces together</li>
+                <li><strong>Voice</strong> — what the agent should <em>say</em> when introducing the work</li>
+                <li><strong>Visual</strong> — what the agent should <em>show</em> when presenting the work — the creator's likeness, scenes, framing</li>
+              </ul>
+              <p>
+                This is not metadata in the flat-tag sense. It is the creator's directorial layer — the intent that gets lost when work is reduced to a file in a feed. Exposing it is what lets an agent deliver an experience that reflects the creator, not just the catalog.
+              </p>
+
+              <h2>The control problem</h2>
+              <p>
+                There is a tradeoff hiding inside this shift. Most <em>"AI for creators"</em> tools today work by absorbing your bytes — songs, video, text — to train, reuse, or remix. Once the bytes are absorbed, control is gone in practice, regardless of what the contract says.
+              </p>
+              <p>
+                A copyright-preserving alternative exists: architectures where the agent sees metadata and a proxied URL only, never the source bytes. Access is verified per request; pausing or unpublishing kills it instantly. The work becomes discoverable, narratable, and playable through agents without becoming training material or a file floating around someone else's system.
+              </p>
+              <p>
+                This is the precondition for creator participation. Without it, exposure to the new discovery layer is a one-way trade: visibility now, control gone forever. With it, creators get the reach of agents and keep ownership of the work.
+              </p>
+
+              <p class="brief-pullquote">
+                Rights without exposure are worth less every quarter. Exposure without control creates a different problem. The era will be defined by the architectures that let creators have both.
+              </p>
+
+              <h2>What this means for builders</h2>
+              <p>
+                If you build product, platform, or infrastructure in or around media, the implications are concrete:
+              </p>
+              <ul>
+                <li><strong>Apps are the wrong place to invest singular effort.</strong> Apps will be generated, swapped, and replaced as agent ecosystems evolve. The durable layer is below the app.</li>
+                <li><strong>The schema is the product.</strong> A standardized, agent-readable representation of a catalog is the artifact that holds value across surfaces. Build for that.</li>
+                <li><strong>Decouple infrastructure from interface — and from any single protocol.</strong> The schema, access layer, and agent-readable catalog should outlive any specific client and any specific protocol. Apps spin up against the infrastructure, not the other way around.</li>
+                <li><strong>Treat copyright preservation as a structural feature, not a flag.</strong> The architecture has to keep source bytes out of the agent's reach by design — not by policy.</li>
+              </ul>
+
+              <h2>What Harmonic Wave is</h2>
+              <p>
+                <a href="https://harmonicwave.ai" target="_blank" rel="noopener noreferrer">Harmonic Wave</a> is the platform behind the first artist-owned MCP server. It exposes a creator's catalog as an AI-native structured experience while keeping the source media under copyright-preserving control — agents see metadata and per-request proxied URLs, never the bytes. MCP is today's protocol; the schema and architecture are designed to outlast it.
+              </p>
+              <p>
+                The MCP server itself is the easy part — and an adapter for any successor protocol will be too. The platform's actual work is the layer below it:
+              </p>
+              <ul>
+                <li><strong>Copyright-preserving architecture.</strong> Agents never see source bytes. Pausing or unpublishing kills access immediately. Patent-pending.</li>
+                <li><strong>A standardized schema</strong> so every catalog interoperates with every player. One-off MCPs don't.</li>
+                <li><strong>A universal player generator</strong> that produces narrative-aware experiences from any catalog on the platform — audio-driven for music and podcasts, scene-aware for video.</li>
+                <li><strong>Audio and delivery infrastructure</strong> — signed-URL streaming, release gating, chapter-aware access control. Full stack from metadata to bytes.</li>
+                <li><strong>Voice Identity.</strong> Creator-defined voiceover that introduces, contextualizes, and threads pieces together. The catalog speaks with its own voice on every surface.</li>
+                <li><strong>Visual Identity.</strong> Photorealistic AI characters generated to look like the creator, composited into video and visual surfaces. The catalog presents its own face, not a generic stock avatar.</li>
+                <li><strong>Cross-client distribution.</strong> One MCP server, accessible from any AI client — Claude, ChatGPT, Gemini, enterprise tools. Expose once, surface everywhere.</li>
+                <li><strong>Cross-format extensibility.</strong> Music today; podcasts, video, and narrative media on the roadmap.</li>
+              </ul>
+              <p>
+                The platform is in open beta with a v1.0 launch planned for May 2026. The underlying architecture is patent pending.
+              </p>
+
+              <h2>Where to look</h2>
+              <p>
+                The thesis is not theoretical. It's running in production today.
+              </p>
+              <ul>
+                <li><a href="https://experience.matthewhartleymusic.com" target="_blank" rel="noopener noreferrer">experience.matthewhartleymusic.com</a> — the live Experience Player for <em>The Time Is Now</em>. Agent-era media delivery in practice.</li>
+                <li><a href="https://github.com/imaginepeakstudios/matthewhartleymusic-mcp" target="_blank" rel="noopener noreferrer">github.com/imaginepeakstudios/matthewhartleymusic-mcp</a> — the first artist-owned MCP server. Open source, Apache 2.0, connectable from Claude, ChatGPT, Gemini, or any compatible AI client.</li>
+                <li><a href="https://matthewhartleymusic.com" target="_blank" rel="noopener noreferrer">matthewhartleymusic.com</a> — the artist site, for context on the catalog.</li>
+              </ul>
+              <p>
+                The proof that shipped is a music catalog because that's what was built first. The structural shift extends beyond it.
+              </p>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="brief-cta">
+          <div class="shell reading-shell">
+            <div class="eyebrow">See for yourself</div>
+            <h2>The thesis is in production.</h2>
+            <p class="brief-cta-deck">
+              Working artist-owned MCP server. Live Experience Player. Patent-pending architecture. The system is public — inspect it, then reach out with questions, coverage interest, or partnership conversations.
+            </p>
+            <div class="brief-cta-actions">
+              <a
+                class="brief-cta-btn"
+                href="https://experience.matthewhartleymusic.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See the live Experience Player <span class="arrow-glyph" aria-hidden="true">→&#xFE0E;</span>
+              </a>
+              <a
+                class="brief-cta-secondary"
+                href="mailto:hello@imaginepeakstudios.com?subject=Brief%3A%20Built%20for%20Agents"
+              >
+                Or email hello@imaginepeakstudios.com
+              </a>
+            </div>
+            <div class="brief-author">
+              <p>
+                <strong>Matthew Hartley</strong> is the founder of Imagine Peak Studios — a consulting practice covering product strategy, sonic direction, and AI engineering. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind <em>The Time Is Now</em>, the first artist-owned MCP server.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-shell">
+        <a class="footer-brand" href="/" aria-label="Imagine Peak Studios home">
+          <img
+            class="footer-icon"
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt=""
+            width="42"
+            height="42"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>Imagine Peak Studios</p>
+        </a>
+        <p class="footer-meta"><small>&copy; 2026 All rights reserved.</small></p>
+      </div>
+    </footer>
+
+    <aside
+      class="consent-banner"
+      id="consent-banner"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Privacy preferences"
+      hidden
+    >
+      <div class="shell consent-shell">
+        <p class="consent-copy">
+          We use a small amount of analytics to understand how the site is used. No tracking until you say so.
+        </p>
+        <div class="consent-actions">
+          <button type="button" class="consent-btn consent-decline" data-consent="denied">Decline</button>
+          <button type="button" class="consent-btn consent-accept" data-consent="granted">Accept</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="/script.js"></script>
+    <script>
+      // Editorial network banner — nodes connected by faint lines, with
+      // bright pulses traveling along the connections. Pulses light up the
+      // line they travel on, ping the destination node on arrival, and
+      // occasionally chain into a follow-on pulse from the destination
+      // along a different connection. Monochrome. Deterministic layout.
+      (function () {
+        var svg = document.getElementById('brief-network-svg');
+        if (!svg) return;
+        var ns = 'http://www.w3.org/2000/svg';
+
+        // Hand-tuned node positions across the 1400 × 100 viewBox.
+        var nodeData = [
+          { x:  60, y: 32 },
+          { x: 145, y: 64 },
+          { x: 230, y: 22 },
+          { x: 320, y: 58 },
+          { x: 410, y: 38 },
+          { x: 495, y: 72 },
+          { x: 580, y: 28 },
+          { x: 665, y: 60 },
+          { x: 750, y: 36 },
+          { x: 840, y: 70 },
+          { x: 925, y: 26 },
+          { x: 1010, y: 56 },
+          { x: 1100, y: 34 },
+          { x: 1185, y: 66 },
+          { x: 1270, y: 30 },
+          { x: 1345, y: 62 }
+        ];
+
+        function dist(a, b) {
+          var dx = a.x - b.x, dy = a.y - b.y;
+          return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        // Build node objects with element refs and ping-state
+        var nodes = nodeData.map(function (n) {
+          return { x: n.x, y: n.y, pingedAt: -Infinity, neighbors: [], el: null, pinging: false };
+        });
+
+        // Connect each node to its two nearest neighbors. Dedupe pairs.
+        var seen = {};
+        var connections = [];
+        for (var i = 0; i < nodes.length; i++) {
+          var ranked = [];
+          for (var j = 0; j < nodes.length; j++) {
+            if (j === i) continue;
+            ranked.push({ idx: j, d: dist(nodes[i], nodes[j]) });
+          }
+          ranked.sort(function (a, b) { return a.d - b.d; });
+          for (var k = 0; k < 2; k++) {
+            var a = i, b = ranked[k].idx;
+            var key = a < b ? a + '-' + b : b + '-' + a;
+            if (!seen[key]) {
+              seen[key] = true;
+              var conn = { a: nodes[a], b: nodes[b], el: null, activeUntil: -Infinity, lit: false };
+              connections.push(conn);
+              nodes[a].neighbors.push(conn);
+              nodes[b].neighbors.push(conn);
+            }
+          }
+        }
+
+        // Render lines first (under nodes)
+        connections.forEach(function (c) {
+          var line = document.createElementNS(ns, 'line');
+          line.setAttribute('x1', c.a.x);
+          line.setAttribute('y1', c.a.y);
+          line.setAttribute('x2', c.b.x);
+          line.setAttribute('y2', c.b.y);
+          line.setAttribute('class', 'link');
+          svg.appendChild(line);
+          c.el = line;
+        });
+
+        // Render nodes
+        nodes.forEach(function (n) {
+          var circle = document.createElementNS(ns, 'circle');
+          circle.setAttribute('cx', n.x);
+          circle.setAttribute('cy', n.y);
+          circle.setAttribute('r', 2.6);
+          circle.setAttribute('class', 'node');
+          svg.appendChild(circle);
+          n.el = circle;
+        });
+
+        // Respect reduced motion — leave the static network in place
+        var reduceMotion =
+          window.matchMedia &&
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) return;
+
+        // Tunables
+        var maxPulses = 5;
+        var PING_DURATION = 650;       // ms — how long a node "ping" lasts
+        var LINE_FADE = 380;           // ms — how long a line stays bright after pulse
+        var CHAIN_PROBABILITY = 0.55;  // chance a pulse triggers a follow-on
+
+        var activePulses = [];
+
+        function startPulseOnConnection(conn, fromNode) {
+          if (activePulses.length >= maxPulses) return;
+          var to = fromNode === conn.a ? conn.b : conn.a;
+          // Halo first (renders behind core)
+          var halo = document.createElementNS(ns, 'circle');
+          halo.setAttribute('r', 7);
+          halo.setAttribute('class', 'pulse-halo');
+          halo.setAttribute('opacity', 0);
+          svg.appendChild(halo);
+          // Core
+          var core = document.createElementNS(ns, 'circle');
+          core.setAttribute('r', 3.4);
+          core.setAttribute('class', 'pulse');
+          core.setAttribute('opacity', 0);
+          svg.appendChild(core);
+          activePulses.push({
+            halo: halo,
+            core: core,
+            from: fromNode,
+            to: to,
+            conn: conn,
+            start: performance.now(),
+            duration: 1400 + Math.random() * 1100
+          });
+        }
+
+        function spawnRandomPulse() {
+          if (activePulses.length >= maxPulses) return;
+          var c = connections[Math.floor(Math.random() * connections.length)];
+          var fromNode = Math.random() < 0.5 ? c.a : c.b;
+          startPulseOnConnection(c, fromNode);
+        }
+
+        function chainFrom(node, excludeConn) {
+          var options = node.neighbors.filter(function (c) { return c !== excludeConn; });
+          if (!options.length) return;
+          var next = options[Math.floor(Math.random() * options.length)];
+          startPulseOnConnection(next, node);
+        }
+
+        function tick(time) {
+          // Advance / retire pulses
+          for (var i = activePulses.length - 1; i >= 0; i--) {
+            var p = activePulses[i];
+            var t = (time - p.start) / p.duration;
+            if (t >= 1) {
+              if (p.halo.parentNode) p.halo.parentNode.removeChild(p.halo);
+              if (p.core.parentNode) p.core.parentNode.removeChild(p.core);
+              activePulses.splice(i, 1);
+              // Ping the destination node
+              p.to.pingedAt = time;
+              // Hold line bright a bit longer so the fade trails the pulse
+              p.conn.activeUntil = time + LINE_FADE;
+              // Maybe trigger a chain reaction
+              if (Math.random() < CHAIN_PROBABILITY) {
+                chainFrom(p.to, p.conn);
+              }
+              continue;
+            }
+            var x = p.from.x + (p.to.x - p.from.x) * t;
+            var y = p.from.y + (p.to.y - p.from.y) * t;
+            var fade = t < 0.18 ? t / 0.18 : (t > 0.82 ? (1 - t) / 0.18 : 1);
+            p.core.setAttribute('cx', x);
+            p.core.setAttribute('cy', y);
+            p.core.setAttribute('opacity', fade);
+            p.halo.setAttribute('cx', x);
+            p.halo.setAttribute('cy', y);
+            p.halo.setAttribute('opacity', fade * 0.22);
+            // Keep the line bright while the pulse is on it
+            p.conn.activeUntil = time + LINE_FADE;
+          }
+
+          // Update node ping rendering — scale up and brighten on arrival,
+          // ease back to baseline.
+          for (var ni = 0; ni < nodes.length; ni++) {
+            var n = nodes[ni];
+            var pt = (time - n.pingedAt) / PING_DURATION;
+            if (pt >= 0 && pt <= 1) {
+              var amp = 1 - pt; // 1 at ping moment, 0 when faded
+              n.el.setAttribute('r', 2.6 + amp * 3.6); // up to ~6.2
+              n.el.setAttribute('opacity', 0.7 + amp * 0.3); // up to 1.0
+              n.pinging = true;
+            } else if (n.pinging) {
+              n.el.setAttribute('r', 2.6);
+              n.el.removeAttribute('opacity');
+              n.pinging = false;
+            }
+          }
+
+          // Update line illumination
+          for (var ci = 0; ci < connections.length; ci++) {
+            var c = connections[ci];
+            if (c.activeUntil > time) {
+              var remaining = (c.activeUntil - time) / LINE_FADE;
+              c.el.setAttribute('opacity', 0.32 + 0.36 * remaining); // up to ~0.68
+              c.lit = true;
+            } else if (c.lit) {
+              c.el.removeAttribute('opacity');
+              c.lit = false;
+            }
+          }
+
+          requestAnimationFrame(tick);
+        }
+
+        // Stagger initial pulses so the network looks active immediately
+        spawnRandomPulse();
+        setTimeout(spawnRandomPulse, 220);
+        setTimeout(spawnRandomPulse, 480);
+        setInterval(spawnRandomPulse, 700);
+        requestAnimationFrame(tick);
+      })();
+    </script>
+  </body>
+</html>

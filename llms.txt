@@ -14,6 +14,7 @@ Imagine Peak Studios (IPS) operates at the intersection of software, storytellin
 
 Editorial briefs and analysis on AI-native media, infrastructure, and the systems shaping creative work.
 
+- [Streaming was built for apps. The next era will be built for agents.](https://imaginepeakstudios.com/insights/built-for-agents.md): The flagship thesis on why AI agents — not apps — are the next interface layer for media, what changes when delivery is structured rather than passive, and why creators need control over context and copyright. *(The Thesis, May 2026.)*
 - [Streaming is the infrastructure. The new front end is now forming.](https://imaginepeakstudios.com/insights/labels-ai-discovery.md): How AI agents are reshaping music discovery, and what catalog labels, A&R, and rights holders should pay attention to now. *(For Labels & A&R, April 2026.)*
 
 ## Press
