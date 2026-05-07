@@ -21,6 +21,7 @@ Editorial briefs and analysis on AI-native media, infrastructure, and the system
 Press releases, media coverage, and announcements from Imagine Peak Studios.
 
 - [Press index](https://imaginepeakstudios.com/press/): Updates on Harmonic Wave platform launches, Matthew Hartley Music releases, partnerships, and coverage.
+- [Matthew Hartley launches Harmonic Wave, a new platform for AI-powered media experiences](https://imaginepeakstudios.com/press/harmonic-wave-launch.md): Platform launch announcement — structured, AI-driven media delivery with native MCP support. Originally distributed via PR Newswire on May 7, 2026.
 - [Musician Matthew Hartley releases *The Time Is Now* as a chapter-based music experience on AI platform Harmonic Wave](https://imaginepeakstudios.com/press/the-time-is-now-launch.md): The launch announcement for Matthew Hartley's debut album, released chapter by chapter on the Harmonic Wave platform. Originally distributed via PR Newswire on May 5, 2026.
 
 ## Selected Projects
