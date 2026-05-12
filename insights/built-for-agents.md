@@ -27,7 +27,15 @@ Agents invert that. The user says *"I want something that feels like the end of 
 
 Apps are still useful — but they stop being the primary surface. They become one of many client experiences hanging off a deeper layer where catalogs are exposed in structured, agent-readable form.
 
+## Why this isn't just better recommendation
+
+Themed recommendation has been around for a while. Pandora-style mood radio. Netflix's *"because you watched X"* rows. YouTube's auto-generated mixes. *"Hey Alexa, play something chill"* spins one up in real time. But all of these run through the platform's classifier — the platform's algorithm decides what counts as similar, mood-appropriate, or chill. The creator's only contribution is being in the catalog. The match is one-sided: platform to user. The creator has no voice or control in how their work is experienced.
+
+In the agent era, the match runs both ways. The agent interprets the user's natural-language intent and queries the creator's structured catalog — themes, sequences, framing, voice, visual identity the creator defined themselves. The creator isn't a unit being classified. They're a voice the agent can discover.
+
 ## Why now
+
+The creator surface stack already exists. Websites and social for presence. YouTube channels for owned video reach. Bandcamp, Patreon, Substack for direct fan economics. Streaming platforms — Spotify, Netflix, Apple — for distribution and in-platform placement. Each surface does its job for human consumers. None of them lets an AI agent query a catalog directly.
 
 The shift is happening because the protocol layer finally exists.
 
@@ -36,7 +44,7 @@ The shift is happening because the protocol layer finally exists.
 - **February 2026** — Claude Opus 4.6 ships. AI code generation crosses into production quality. App-building gets democratized — a single person can ship real apps end-to-end.
 - **April 2026** — The first artist-owned MCP server goes live. Catalog-as-agent-readable goes from concept to production.
 
-In parallel, AI agents (Claude, ChatGPT, Gemini) became real discovery surfaces in technical and influential user pockets — the demand side maturing alongside the supply side. Major platforms haven't built this layer yet, or haven't announced it. That asymmetry is the window.
+In parallel, AI agents (Claude, ChatGPT, Gemini) became real discovery surfaces in technical and influential user pockets — the demand side maturing alongside the supply side. Major platforms haven't built this layer yet, or haven't announced it — and they face a structural problem the creator-owned path doesn't. Their licensing is built around in-platform playback, and their app *is* the experience — fixed player, fixed UI, fixed business model. Whether it's Spotify, YouTube, Netflix, or Apple TV+, exposing catalogs to external agents that generate experiences outside that frame would require renegotiating rights across labels, publishers, studios, performers, and territories. Even when platforms do shift, the fastest paths leave the creator out of the match. The creators and rights holders who move first set the stage for what this layer should be — with rights they already control.
 
 MCP is the protocol that opened the door. The protocol layer will keep evolving — successors will appear, standards will converge — but the interface shift is structural. What's built today against MCP transfers to what comes next.
 
