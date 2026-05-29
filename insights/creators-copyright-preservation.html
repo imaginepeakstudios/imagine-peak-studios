@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creators have more leverage now than at any point in modern media. — A Brief for Creators · Imagine Peak Studios</title>
+    <meta
+      name="description"
+      content="AI agents are dismantling a century of distribution gatekeeping — but the same technology can absorb the work without permission. A brief on what's at stake for creators, and what consent and architecture decide. By Matthew Hartley, Imagine Peak Studios."
+    />
+    <meta name="author" content="Matthew Hartley, Imagine Peak Studios" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://imaginepeakstudios.com/insights/creators-copyright-preservation" />
+    <link rel="alternate" type="text/markdown" href="https://imaginepeakstudios.com/insights/creators-copyright-preservation.md" title="Markdown version" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Imagine Peak Studios" />
+    <meta property="og:title" content="Creators have more leverage now than at any point in modern media. Architecture decides whether they keep it." />
+    <meta
+      property="og:description"
+      content="AI agents are dismantling a century of distribution gatekeeping — but the same technology can absorb the work without permission. Consent and architecture decide the creator's fate."
+    />
+    <meta property="og:url" content="https://imaginepeakstudios.com/insights/creators-copyright-preservation" />
+    <meta
+      property="og:image"
+      content="https://imaginepeakstudios.com/imagine_peak_studios_banner_og.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="article:author" content="Matthew Hartley" />
+    <meta property="article:publisher" content="Imagine Peak Studios" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Creators have more leverage now than at any point in modern media. Architecture decides whether they keep it." />
+    <meta
+      name="twitter:description"
+      content="AI agents are dismantling a century of distribution gatekeeping — but the same technology can absorb the work without permission. Consent and architecture decide the creator's fate."
+    />
+    <meta
+      name="twitter:image"
+      content="https://imaginepeakstudios.com/imagine_peak_studios_banner_og.jpg"
+    />
+    <meta name="theme-color" content="#050505" />
+
+    <!-- Google tag (gtag.js) with Consent Mode v2 — mirrors main site -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      var ipsConsent = null;
+      try { ipsConsent = localStorage.getItem('ips-consent'); } catch (e) {}
+
+      gtag('consent', 'default', {
+        ad_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_user_data: ipsConsent === 'granted' ? 'granted' : 'denied',
+        ad_personalization: ipsConsent === 'granted' ? 'granted' : 'denied',
+        analytics_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        functionality_storage: 'granted',
+        personalization_storage: ipsConsent === 'granted' ? 'granted' : 'denied',
+        security_storage: 'granted'
+      });
+
+      gtag('js', new Date());
+      gtag('config', 'G-YC7JVM7M4E');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC7JVM7M4E"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Instrument+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Creators have more leverage now than at any point in modern media. Architecture decides whether they keep it.",
+        "description": "AI agents are dismantling a century of distribution gatekeeping — but the same technology can absorb the work without permission. Consent and architecture decide the creator's fate.",
+        "url": "https://imaginepeakstudios.com/insights/creators-copyright-preservation",
+        "author": {
+          "@type": "Person",
+          "name": "Matthew Hartley",
+          "url": "https://imaginepeakstudios.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Imagine Peak Studios",
+          "url": "https://imaginepeakstudios.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://imaginepeakstudios.com/imagine_peak_studios_icon_800x800.png"
+          }
+        },
+        "image": "https://imaginepeakstudios.com/imagine_peak_studios_banner_og.jpg",
+        "mainEntityOfPage": "https://imaginepeakstudios.com/insights/creators-copyright-preservation"
+      }
+    </script>
+
+    <style>
+      /* -----------------------------------------------------------------
+         Brief-specific overrides — extends styles.css design tokens.
+         Keeps the editorial IPS feel; tunes type rhythm for long-form reading.
+         ----------------------------------------------------------------- */
+
+      .brief-hero {
+        background: var(--bg-soft, #f3f2ed);
+        padding-top: clamp(5rem, 10vw, 8rem);
+        padding-bottom: clamp(3rem, 6vw, 5rem);
+      }
+
+      .brief-hero .eyebrow {
+        margin-bottom: 1.5rem;
+      }
+
+      /* Abstract waveform banner — frequency lines */
+      .brief-hero-banner {
+        width: 100%;
+        height: clamp(56px, 7vw, 88px);
+        margin-bottom: clamp(2.5rem, 5vw, 4rem);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        color: var(--muted, #626262);
+      }
+
+      .brief-gatekeepers {
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 0.8;
+      }
+
+      .brief-gatekeepers rect {
+        fill: currentColor;
+      }
+
+      .brief-title {
+        font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+        color: var(--text, #111111);
+        margin: 0 0 1.5rem;
+        max-width: 34ch;
+      }
+
+      .brief-title em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+      }
+
+      .brief-deck {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+        line-height: 1.55;
+        color: var(--muted, #626262);
+        max-width: 60ch;
+        margin: 0 0 2rem;
+      }
+
+      .brief-byline {
+        font-size: 0.85rem;
+        letter-spacing: 0.02em;
+        color: var(--muted, #626262);
+        text-transform: none;
+        margin: 0;
+      }
+
+      .brief-byline span {
+        color: var(--text, #111111);
+        font-weight: 700;
+      }
+
+      .brief-rule {
+        border: 0;
+        border-top: 1px solid var(--rule, #dfded7);
+        margin: clamp(3rem, 5vw, 5rem) 0;
+      }
+
+      /* Article body */
+      .brief-body {
+        font-size: 1.125rem;
+        line-height: 1.65;
+        color: var(--text, #111111);
+      }
+
+      /* Constrain prose for readability; let headings extend wider */
+      .brief-body p,
+      .brief-body ul,
+      .brief-body ol {
+        max-width: 64ch;
+      }
+
+      .brief-body h2 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+        margin: 3rem 0 1rem;
+        max-width: none; /* override IPS global h2 max-width: 14ch */
+      }
+
+      .brief-body h2:first-child {
+        margin-top: 0;
+      }
+
+      .brief-body h3 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+        line-height: 1.4;
+        margin: 1.75rem 0 0.5rem;
+        max-width: none; /* override IPS global h3 inheritance if any */
+        color: var(--text, #111111);
+      }
+
+      .brief-body p {
+        margin: 0 0 1.25rem;
+      }
+
+      .brief-body p + p {
+        margin-top: 0;
+      }
+
+      .brief-body ul,
+      .brief-body ol {
+        margin: 0 0 1.5rem;
+        padding-left: 1.25rem;
+      }
+
+      .brief-body ul li,
+      .brief-body ol li {
+        margin: 0 0 0.5rem;
+      }
+
+      .brief-body strong {
+        font-weight: 700;
+        color: var(--text, #111111);
+      }
+
+      .brief-body em {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.08em;
+      }
+
+      /* Strong statement block — used for the consent line */
+      .brief-statement {
+        margin: 1.5rem 0 2rem;
+        padding: 1.25rem 1.5rem;
+        background: var(--bg-soft, #f3f2ed);
+        border-left: 3px solid var(--text, #111111);
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        max-width: 64ch;
+      }
+
+      .brief-body a {
+        color: #a04525;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1.5px;
+        text-decoration-color: rgba(160, 69, 37, 0.45);
+        transition: color 0.2s ease, text-decoration-color 0.2s ease, text-decoration-thickness 0.2s ease;
+      }
+
+      .brief-body a:hover {
+        color: #7a3318;
+        text-decoration-color: #7a3318;
+        text-decoration-thickness: 2px;
+      }
+
+      /* External links get a small ↗ glyph */
+      .brief-body a[href^="http"]::after,
+      .brief-body a[href^="//"]::after {
+        content: "↗";
+        display: inline-block;
+        margin-left: 0.15em;
+        font-size: 0.85em;
+        text-decoration: none;
+        color: var(--muted, #626262);
+      }
+
+      /* Pull-quote / callout */
+      .brief-pullquote {
+        font-family: 'Instrument Serif', Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        color: var(--text, #111111);
+        margin: 2.5rem 0;
+        padding-left: 1.5rem;
+        border-left: 2px solid var(--text, #111111);
+        max-width: 50ch;
+      }
+
+      /* Comparison / reference tables */
+      .brief-body table {
+        width: 100%;
+        max-width: 64ch;
+        border-collapse: collapse;
+        margin: 1.5rem 0 2rem;
+        font-size: 0.98rem;
+        line-height: 1.5;
+      }
+
+      .brief-body thead th {
+        text-align: left;
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem 0.75rem 0;
+        border-bottom: 2px solid var(--text, #111111);
+        vertical-align: top;
+        color: var(--text, #111111);
+      }
+
+      .brief-body thead th:not(:last-child) {
+        padding-right: 1.25rem;
+      }
+
+      .brief-body tbody td {
+        padding: 0.65rem 1rem 0.65rem 0;
+        border-bottom: 1px solid var(--rule, #dfded7);
+        vertical-align: top;
+      }
+
+      .brief-body tbody td:not(:last-child) {
+        padding-right: 1.25rem;
+      }
+
+      .brief-body tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      @media (max-width: 600px) {
+        .brief-body table {
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Contrast CTA section — deep ink */
+      .brief-cta {
+        background: var(--ink, #050505);
+        color: var(--light-ink, #f5f4ef);
+        padding: clamp(4rem, 7vw, 6rem) 0;
+        margin-top: clamp(4rem, 6vw, 6rem);
+      }
+
+      .brief-cta .eyebrow {
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+      }
+
+      .brief-cta h2 {
+        font-family: 'Manrope', system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(2rem, 3.5vw, 2.75rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--light-ink, #f5f4ef);
+        margin: 0 0 1.25rem;
+        max-width: 22ch;
+      }
+
+      .brief-cta-deck {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        max-width: 56ch;
+        margin: 0 0 2.25rem;
+      }
+
+      .brief-cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+        align-items: center;
+      }
+
+      .brief-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.95rem 1.5rem;
+        background: var(--light-ink, #f5f4ef);
+        color: var(--ink, #050505);
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+        text-decoration: none;
+        border-radius: 999px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-btn:hover {
+          transform: translateY(-1px);
+          opacity: 0.92;
+        }
+      }
+
+      .brief-cta-secondary {
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--light-rule, rgba(245, 244, 239, 0.18));
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-secondary:hover {
+          color: var(--light-ink, #f5f4ef);
+          text-decoration-color: var(--light-ink, #f5f4ef);
+        }
+      }
+
+      /* Author block under CTA */
+      .brief-author {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--light-rule, rgba(245, 244, 239, 0.18));
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: var(--light-muted, rgba(245, 244, 239, 0.72));
+        max-width: 56ch;
+      }
+
+      .brief-author strong {
+        color: var(--light-ink, #f5f4ef);
+        font-weight: 700;
+      }
+
+      /* Mobile tweaks */
+      @media (max-width: 720px) {
+        .brief-pullquote {
+          padding-left: 1rem;
+          margin: 2rem 0;
+        }
+
+        .brief-cta-actions {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+
+        .brief-cta-btn {
+          width: 100%;
+          justify-content: center;
+        }
+
+        /* Force italic clause onto its own line on mobile */
+        .brief-title em {
+          display: block;
+        }
+
+        /* Hide external-link ↗ glyph on mobile — Manrope doesn't ship U+2197,
+           so the fallback glyph mismatches surrounding type weight. The
+           target="_blank" affordance is handled by the browser. */
+        .brief-body a[href^="http"]::after,
+        .brief-body a[href^="//"]::after {
+          content: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#brief">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="shell header-shell">
+        <a class="brand-mark" href="/" aria-label="Imagine Peak Studios home">
+          <img
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt="Imagine Peak Studios"
+            width="42"
+            height="42"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="https://github.com/imaginepeakstudios" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+          <a href="/insights/">Insights</a>
+          <a href="/press/">Press</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="nav-backdrop" hidden></div>
+
+    <main id="brief">
+      <article>
+        <section class="section brief-hero ambient-section">
+          <div class="shell reading-shell">
+            <div class="brief-hero-banner" aria-hidden="true">
+              <svg class="brief-gatekeepers" id="brief-gatekeepers-svg" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
+            </div>
+            <div class="eyebrow">Brief · For Creators · June 2026</div>
+            <h1 class="brief-title">Creators have more leverage now than at any point in modern media.<br /><em>Architecture decides whether they keep it.</em></h1>
+            <p class="brief-deck">
+              AI agents are dismantling a century of distribution gatekeeping. But the same technology can absorb the work without permission. Consent and architecture will decide the creator's fate.
+            </p>
+            <p class="brief-byline">
+              By <span>Matthew Hartley</span> — Founder, Imagine Peak Studios
+            </p>
+          </div>
+        </section>
+
+        <section class="section ambient-section">
+          <div class="shell reading-shell">
+            <div class="brief-body">
+
+              <p>
+                For musicians, directors, photographers, writers, and every other kind of creator whose work <em>is</em> the asset, the present moment is the most consequential one in the history of modern media. The structures that have governed how creative work reaches an audience for the past hundred years are dissolving. The structures that will replace them are being built right now. Whether creators come out of the transition with more control over their work and more direct access to their audience than they have ever had — or with less of both — depends on architectural choices being made this year.
+              </p>
+              <p>
+                This is a brief about what's at stake, what's actually moving, and what creators can do about it.
+              </p>
+
+              <p class="brief-pullquote">
+                The same technology that threatens to absorb a creator's work also eliminates every gatekeeper that ever stood in front of it. Consent and architecture are what separate the two outcomes.
+              </p>
+
+              <h2>Two truths at once</h2>
+              <p>
+                The cultural conversation about AI and creators tends to land on one of two extremes — <em>AI is going to take everything</em> or <em>AI is the future, get on board.</em> Both are partially right. The truth creators have to operate inside is more specific: the same underlying technology is simultaneously the biggest IP-extraction event in modern media — models trained without consent, voice cloning at consumer scale, fused derivative outputs — and the biggest distribution-empowerment event — conversational agents that can discover and present a catalog directly to an audience with no platform sitting between them. The fork that decides which one a given creator experiences is the <em>architecture they participate through.</em>
+              </p>
+
+              <h2>A short history of gatekeepers</h2>
+              <p>
+                To see why the agent-era inversion is so significant, it helps to remember what every previous distribution era required of creators: a gatekeeper.
+              </p>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Era</th>
+                    <th scope="col">The work</th>
+                    <th scope="col">The gatekeeper</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Radio</strong></td>
+                    <td>Recordings</td>
+                    <td>Stations, programmers, labels</td>
+                  </tr>
+                  <tr>
+                    <td><strong>TV</strong></td>
+                    <td>Shows, films</td>
+                    <td>Networks, studios, syndicators</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Web</strong></td>
+                    <td>Sites</td>
+                    <td>Search engines, ad networks</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Apps</strong></td>
+                    <td>Software, catalogs</td>
+                    <td>App stores, OS platforms</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Streaming</strong></td>
+                    <td>Songs, episodes, films</td>
+                    <td>Spotify, Apple, Netflix, YouTube and their algorithms</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>
+                In each era, creators traded a meaningful share of value for access to the audience. The gatekeeper took a cut, set the terms, controlled discovery, and made the creator dependent on the platform's continued goodwill. <em>"Build your audience on someone else's land"</em> has been the only realistic option for most of the history of distribution.
+              </p>
+              <p>
+                The constraint wasn't talent. The constraint was reach. And reach, until now, required a middleman.
+              </p>
+
+              <h2>The agent-era inversion</h2>
+              <p>
+                When the interface is an AI agent that interprets user intent and assembles experiences on the fly from any compliant catalog, the entire gatekeeping layer collapses.
+              </p>
+              <ul>
+                <li>No app to be approved for.</li>
+                <li>No algorithm to be ranked by.</li>
+                <li>No editorial team to be picked up by.</li>
+                <li>No proprietary platform between creator and audience.</li>
+              </ul>
+              <p>
+                A structured, agent-readable catalog plus a working server (today via the Model Context Protocol, an open standard rather than a proprietary stack; tomorrow via whatever succeeds it) equals direct access to every conversational AI surface that exists. Claude, ChatGPT, Gemini, voice agents, and whatever comes next can discover the work, interpret the creator's intent, and deliver experiences without any platform between creator and audience taking a cut.
+              </p>
+              <p>
+                The creator becomes their own distribution layer. The work itself is the storefront. The agent is the cashier and the curator and the recommendation engine — working on behalf of the listener or viewer, not on behalf of a platform's monetization model.
+              </p>
+              <p>
+                For the first time in the history of modern media, the question creators face is not <em>"how do I get on the platform"</em> but <em>"is my work structured well enough for the agent to understand and present it."</em> The whole game becomes the content and how it's presented.
+              </p>
+
+              <p class="brief-pullquote">
+                For a century, distribution power belonged to whoever controlled audience access. In the agent era, it may increasingly belong to whoever controls the catalog.
+              </p>
+
+              <h2>The smart money appears to have figured this out</h2>
+              <p>
+                The financial markets have been ahead of the cultural conversation on this for a few years. The catalog-acquisition wave — institutional capital paying nine and ten figures for ownership of creator catalogs — is what it looks like when professional investors price in the next distribution era before the public does.
+              </p>
+              <p>
+                A partial list of the past five years:
+              </p>
+              <ul>
+                <li><strong>Bruce Springsteen</strong> sold his recorded and publishing catalogs to Sony in late 2021, in a deal reported in the $500M+ range.</li>
+                <li><strong>Queen's catalog</strong> sold to Sony in 2024 in a deal widely reported as over $1B — the largest single-artist catalog acquisition on record.</li>
+                <li><strong>Pink Floyd's recorded-music rights, name-and-likeness, and related assets</strong> sold to Sony in 2024, in a deal reported around $400M. Songwriting and publishing rights were not included.</li>
+                <li><strong>Bob Dylan, Justin Bieber, Neil Young, Stevie Nicks, Tina Turner, the Bob Marley estate, the David Bowie estate</strong> — all sold catalog rights in the past five years, with reported valuations ranging from high eight figures to well into the hundreds of millions.</li>
+                <li><strong>Hipgnosis Songs Fund</strong>, the highest-profile public investment vehicle built around the catalog-asset thesis, was acquired by Blackstone in 2024. Primary Wave, Round Hill, Influence Media, Litmus Music — entire firms structured around catalog as a long-duration asset class.</li>
+                <li><strong>BMG and Concord</strong> announced a planned combination in 2026, expected to close in the second half of the year, to form a single independent rights holder. BMG's release framed the combined entity as <em>"the world's leading independent music company,"</em> with pro-forma 2026 EBITDA disclosed at over $730M and a stated mid-term ambition of $1.2B. The combined catalog includes Paul Simon, Creedence Clearwater Revival, R.E.M., Phil Collins, Jean-Michel Jarre, Jelly Roll, Lainey Wilson, <em>Hamilton</em>, and 125,000+ other artists and songwriters. BMG's Thomas Coesfeld cited <em>"AI tools"</em> among the deal's strategic priorities alongside rights, signings, and licenses. The broader pattern — individual catalog acquisitions giving way to large-scale consolidation of rights portfolios, with executives openly framing AI as part of long-term value — reads as the catalog wave moving into its consolidation phase.</li>
+                <li><strong>Beyoncé, Taylor Swift, Jay-Z, and others</strong> have increasingly emphasized ownership or control of masters and publishing rights — reflecting a broader industry thesis that whoever controls the catalog will hold significant leverage over whatever new distribution, licensing, and monetization models emerge next.</li>
+              </ul>
+
+              <p>
+                Three things are visible in the pattern:
+              </p>
+              <ol>
+                <li><strong>Catalogs are being priced as long-duration, appreciating assets</strong> — not as one-time licensing revenue streams. The buyers see decades of monetization ahead, including new revenue surfaces that don't fully exist yet.</li>
+                <li><strong>Institutional capital is increasingly valuing catalogs as long-duration strategic assets</strong> — suggesting investors expect future distribution and monetization channels to expand rather than contract.</li>
+                <li><strong>Creators who retain ownership are sitting on the same asset, against the same future.</strong> The math that makes a catalog worth $1B to Sony is the math that makes a creator's own catalog worth defending against unconsented AI absorption.</li>
+              </ol>
+
+              <p class="brief-pullquote">
+                Sony paid over a billion dollars for one band's catalog because proven catalogs are becoming strategic assets in the era now beginning. A creator who lets AI absorb the work has handed away the same asset the smart money is buying — for free.
+              </p>
+
+              <h2>But the same technology threatens the asset itself</h2>
+              <p>
+                The catalog wave and the agent-era inversion both depend on the work staying <em>the creator's</em>. The AI extraction layer points the other way. To name what's actually moving:
+              </p>
+
+              <h3>The legal landscape</h3>
+              <p>
+                The lawsuits are real and accelerating. Universal, Sony, and Warner — through the RIAA — sued Suno and Udio in June 2024, alleging mass infringement involving copyrighted recordings used to train AI music models. <em>The New York Times</em> sued OpenAI and Microsoft. Authors, publishers, artists, and rights holders have brought a growing number of copyright actions against AI companies, including Anthropic. Tennessee passed the ELVIS Act in March 2024, creating first-in-the-nation protections against unauthorized AI voice cloning and likeness misuse. The EU AI Act entered into force in August 2024, with general-purpose AI obligations — including transparency and copyright-related requirements — entering application later under the Act's phased timeline.
+              </p>
+              <p>
+                The throughline: the law is moving — but the work is being absorbed faster than any legal mechanism can catch up. Lawsuits take years. Statutes take longer. Models trained today are deployed tomorrow.
+              </p>
+
+              <p class="brief-pullquote">
+                Once a model has been trained on the work, no court order pulls the bytes back out of the weights. Whatever protection the law eventually settles on, it operates on the next round, not the current one.
+              </p>
+
+              <h3>The ethical question</h3>
+              <p>
+                The deeper concern, beyond the legal frame, is what gets lost when human authorship is replaced or paraphrased at scale. Audiences engage with music, film, and photography partly because a <em>human</em> made them — the lived experience, choices, and craft are part of what's being consumed. AI-generated substitutes — voice clones, <em>"in the style of"</em> outputs, fused commentary tracks, paraphrased prose — sever that, flooding the cultural conversation with material that has no author and no relationship between maker and audience. The next generation of artists may not get the runway the current one had to develop the craft, because the cultural and economic incentive to develop it erodes when <em>"good enough"</em> output is free and instant.
+              </p>
+              <p>
+                This isn't nostalgia. It's about what audiences have always actually paid for and shared — real artists doing real work — and what happens to the cultural and economic floor when that signal becomes hard to find.
+              </p>
+
+              <h3>The economic strand</h3>
+              <p>
+                Underneath both the legal and the ethical concerns is the force that's actually moving the conversation: money.
+              </p>
+              <p>
+                AI labs are spending tens of billions on compute and training data. The dollars flow to compute providers and to data brokers — almost none flows to the creators whose work <em>is</em> the data. Suno and Udio raised major venture rounds against the thesis that creator catalogs can be turned into training corpora and replaced with infinite generated music. Spotify has confirmed it removed tens of millions of AI-generated tracks tied to royalty-pool gaming and bot streaming — every dollar paid to a fake artist is a dollar not paid to a real one, taken from a pool that is not growing. Some labels have already cut AI licensing deals; whether the artist sees a share depends on the contract, and a lot of those contracts predate this category by decades.
+              </p>
+              <p>
+                In practice, the economics tend to flow toward one of two destinations: creators who retain leverage over their catalogs, or intermediaries who control access to them. Architecture that ties usage to consent and compensation pulls the flow in the first direction; architecture that absorbs the work pulls it in the second.
+              </p>
+
+              <h2>Consent is the line</h2>
+              <p>
+                The frame that resolves the legal, ethical, and economic strands at the same time is consent. Not <em>"AI good"</em> or <em>"AI bad."</em> Not <em>"all derivatives are theft"</em> or <em>"all derivatives are fair use."</em> The line that actually matters:
+              </p>
+
+              <p class="brief-statement">
+                A creator's content, likeness, and IP should not be available for AI training, derivation, or cloning unless that creator has affirmatively consented to it. Default off. Opt in on the creator's terms. Or don't use the work.
+              </p>
+
+              <p>
+                This is what the lawsuits are trying to enforce, what the statutes are gesturing toward, what the ethical concern reduces to, and what the economic stake requires. Whether AI is allowed to touch a given creator's work is the creator's call — not the model maker's, not the platform's, not the data broker's.
+              </p>
+              <p>
+                But consent is only meaningful operationally if the architecture <em>can</em> enforce it.
+              </p>
+              <p>
+                A <em>"we won't train on your work without permission"</em> clause in a platform's terms of service does not unlearn a model that has already been trained. A <em>"do not use for AI"</em> metadata flag does not bind a scraper that ignores it. A takedown notice does not reach the abstracted representation of the work in a model's weights. Policy commitments operate on a clock the technology has already outrun.
+              </p>
+              <p>
+                Architecture-level consent enforcement is different. The system is built so that the disallowed use <em>cannot occur</em> — the source bytes physically don't flow to the AI inference layer; the renderer physically cannot serialize an AI wrapper and the source as a single derivative file. No policy review, no employee discretion, no future product pivot can change that without rebuilding the system.
+              </p>
+              <p>
+                For creators, the practical distinction is the difference between trusting a vendor and trusting a structure.
+              </p>
+
+              <h2>What just happened — the labels and the largest streaming platform already agreed</h2>
+              <p>
+                In October 2025, <a href="https://newsroom.spotify.com/2025-10-16/artist-first-ai-music-spotify-collaboration/" target="_blank" rel="noopener noreferrer">Spotify announced a partnership</a> with Sony Music Group, Universal Music Group, Warner Music Group, Merlin, and Believe to develop AI music products through direct licensing — with rightsholders' consent — before launch. Spotify framed the principle as <em>"upfront agreements, not by asking for forgiveness later."</em>
+              </p>
+              <p>
+                The label statements echoed the same line. Sony's Rob Stringer called direct licensing <em>"the only appropriate way to build [AI music products]."</em> Warner's Robert Kyncl framed it as <em>"new AI licensing deals that protect and compensate rightsholders."</em> Believe's Denis Ladegaillerie reduced it to four words: <em>"consent, control, compensation, and transparency."</em>
+              </p>
+              <p>
+                Reading these statements together, the consent question at the top of the music industry appears to have been settled commercially — the three majors, the largest independent distributor coalition, and the largest streaming platform aligning, in writing, around upfront licensing for AI products targeting recorded music rather than scrape-and-apologize.
+              </p>
+
+              <p class="brief-pullquote">
+                The consent thesis didn't lose. It won — at the commercial layer, in 2025, while the lawsuits were still moving. The question is no longer <em>whether</em> consent before training becomes the operating principle. It's <em>whose work</em> gets covered by it.
+              </p>
+
+              <p>
+                The arrangement reaches the catalogs the industry is already organized around. Whatever a creator keeps direct — masters, demos, independent productions, anything outside these deals — still operates under whatever architectural commitments the platforms they participate through actually enforce. The consent floor is rising at the industry level. Whether it reaches an individual creator's work depends on the architecture that creator ships through.
+              </p>
+
+              <h2>&ldquo;They're going to take it anyway&rdquo;</h2>
+              <p>
+                The fatalist objection to architectural consent is half right and half lazy. Half right: anything already on the open web or sitting on an extractive platform may already be in someone's training corpus. That ship has sailed for work that's already there. Half lazy: every new release, every new collaboration, every new piece of work is a fresh choice about <em>which architecture to participate through.</em> A platform built on architecture-enforced consent is different from the open web in the same way a vault is different from a public square. Bytes inside a verified-proxy access layer are not bytes the AI labs can scrape. The choice is real, and it operates forward.
+              </p>
+              <p>
+                The fatalism reading also misses the leverage argument. As consent-enforcing platforms accumulate creator catalogs, they accumulate negotiating position with AI labs. <em>"If you want access to this catalog for training or derivation, the answer is no by default — and the architecture enforces it"</em> is a position that creates a real market for licensed AI use on creator-defined terms. Government action will follow that operational precedent, not lead it — the Spotify licensing announcement is exactly that pattern in motion.
+              </p>
+              <p>
+                The right framing isn't <em>"they'll take it anyway."</em> It's <em>"the architecture I participate through this year decides what kind of creator I am in the agent era."</em>
+              </p>
+
+              <h2>AI as leverage, not substitute</h2>
+              <p>
+                The right relationship between a creator and AI is the same as the relationship between a creator and any other powerful tool — the creator wields it on their terms.
+              </p>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">AI as leverage (extends reach, IP intact)</th>
+                    <th scope="col">AI as substitute (absorbs IP, hollows the work)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Agents discovering your catalog via structured metadata</td>
+                    <td>Models trained on your catalog without consent</td>
+                  </tr>
+                  <tr>
+                    <td>AI-narrated presentation that composites at playout</td>
+                    <td>Fused derivative files — your work plus AI material in one shareable asset</td>
+                  </tr>
+                  <tr>
+                    <td>AI-driven discovery surfaces (Claude, ChatGPT, voice agents)</td>
+                    <td>Voice clones, <em>"in the style of"</em> generators</td>
+                  </tr>
+                  <tr>
+                    <td>AI-assisted production workflows the creator controls</td>
+                    <td><em>"AI artist"</em> pipelines that replace creators in the output mix</td>
+                  </tr>
+                  <tr>
+                    <td>AI hosts that introduce the work to a listener</td>
+                    <td>AI hosts that replace the work with paraphrased commentary</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>
+                The line is whether the system needs the creator's bytes inside the AI layer to function. Leverage tools don't. Substitute tools do.
+              </p>
+              <p>
+                A creator who participates through the leverage side gets the agent-era distribution empowerment with their IP intact. A creator who participates through the substitute side feeds the next generation of gatekeepers — the AI labs and their data infrastructure — and ends up renting access to a model that was trained on their own work.
+              </p>
+
+              <h2>What creators can demand right now</h2>
+              <p>
+                Concrete questions for any platform, tool, or partner that will touch the work — directly, or through a manager, attorney, label, or studio:
+              </p>
+              <ul>
+                <li><strong>Where do my source files live, and who can reach them?</strong> <em>"In your storage; we fetch them via a verified proxy at playout"</em> is the right shape. <em>"You upload them to our system"</em> moves the bytes outside your control.</li>
+                <li><strong>Will my work be used to train any model — yours or a third party's?</strong> The answer should be a clear no, and the architecture should make that answer enforceable rather than just stated.</li>
+                <li><strong>Can your system produce a single shareable file that combines my work with AI-generated material?</strong> If yes, that's a fusion vector — a derivative asset that can be circulated independently. If no, and the architecture enforces it, derivative leakage is structurally prevented.</li>
+                <li><strong>What happens to past activity when I pause or unpublish?</strong> <em>"Access stops immediately, with nothing cached outside your control"</em> is the right answer. <em>"Signed URLs that expire over the next 30 days"</em> is leaky.</li>
+                <li><strong>Is the architecture inspectable?</strong> Patent filings, open-source reference implementations, and published schemas can be audited. Marketing copy cannot.</li>
+              </ul>
+              <p>
+                If a platform can't answer these clearly, the creator is being asked to trust policy. Trust the architecture instead.
+              </p>
+
+              <h2>Where this goes from here</h2>
+              <p>
+                The agent era's shape is not yet set. The architectural choices being made by platforms and creators <em>this year</em> decide whether creators come out of the transition with more control over their work and more direct access to their audience than they have ever had — or whether AI labs become the next generation of gatekeepers, with creators in the same dependent position they have been in for a hundred years, just on different rails.
+              </p>
+              <p>
+                Keep the bytes where AI can't take them without asking. Refuse fused derivatives. Treat consent as architectural, not contractual. Demand platforms that enforce these by structure, not by promise.
+              </p>
+              <p>
+                The leverage is real. So is the threat. The architecture decides which one creators end up living through.
+              </p>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="brief-cta">
+          <div class="shell reading-shell">
+            <div class="eyebrow">Talk to Matthew</div>
+            <h2>Twenty minutes. No pitch. Your questions.</h2>
+            <p class="brief-cta-deck">
+              A short working session for creators, managers, and rights teams thinking about how to participate in the agent era without giving up architectural control of the work. These are conversations, not pitches.
+            </p>
+            <div class="brief-cta-actions">
+              <a
+                class="brief-cta-btn"
+                href="https://calendly.com/matthew-hartley/strategy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a 20-min strategy call <span class="arrow-glyph" aria-hidden="true">→&#xFE0E;</span>
+              </a>
+              <a
+                class="brief-cta-secondary"
+                href="mailto:hello@imaginepeakstudios.com?subject=Brief%3A%20Creators%20%26%20Copyright%20Preservation"
+              >
+                Or reply by email
+              </a>
+            </div>
+            <div class="brief-author">
+              <p>
+                <strong>Matthew Hartley</strong> is the founder of Imagine Peak Studios — a consulting practice covering product strategy, sonic direction, and AI engineering. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind <em>The Time Is Now</em>, the first artist-owned MCP server.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-shell">
+        <a class="footer-brand" href="/" aria-label="Imagine Peak Studios home">
+          <img
+            class="footer-icon"
+            src="/imagine_peak_studios_icon_800x800.png"
+            alt=""
+            width="42"
+            height="42"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>Imagine Peak Studios</p>
+        </a>
+        <p class="footer-meta"><small>&copy; 2026 All rights reserved.</small></p>
+      </div>
+    </footer>
+
+    <aside
+      class="consent-banner"
+      id="consent-banner"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Privacy preferences"
+      hidden
+    >
+      <div class="shell consent-shell">
+        <p class="consent-copy">
+          We use a small amount of analytics to understand how the site is used. No tracking until you say so.
+        </p>
+        <div class="consent-actions">
+          <button type="button" class="consent-btn consent-decline" data-consent="denied">Decline</button>
+          <button type="button" class="consent-btn consent-accept" data-consent="granted">Accept</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="/script.js"></script>
+    <script>
+      // Editorial gatekeeper-collapse banner — a row of tall vertical bars
+      // (gatekeepers) that collapse left-to-right, hold briefly, then rebuild
+      // left-to-right and repeat. Literal illustration of the article's
+      // "gatekeeping layer collapsing" thesis. Deterministic loop driven by
+      // a phase-shifted per-bar cycle — no randomness, no jitter.
+      (function () {
+        var svg = document.getElementById('brief-gatekeepers-svg');
+        if (!svg) return;
+        var ns = 'http://www.w3.org/2000/svg';
+        var bars = 28;
+        var barWidth = 8;
+        var spacing = 1200 / bars;
+        var rects = [];
+
+        for (var i = 0; i < bars; i++) {
+          var rect = document.createElementNS(ns, 'rect');
+          // Center each bar inside its slot
+          rect.setAttribute('x', i * spacing + (spacing - barWidth) / 2);
+          rect.setAttribute('width', barWidth);
+          svg.appendChild(rect);
+          rects.push(rect);
+        }
+
+        var MAX_H = 60;
+        var MIN_H = 4;
+        var MAX_OPACITY = 0.9;
+        var MIN_OPACITY = 0.1;
+
+        // Smoothstep — soft transition between collapsed and standing states
+        function smoothstep(edge0, edge1, x) {
+          var t = (x - edge0) / (edge1 - edge0);
+          if (t < 0) t = 0;
+          if (t > 1) t = 1;
+          return t * t * (3 - 2 * t);
+        }
+
+        // Per-bar standing value 0..1 for a given global loop position 0..1.
+        // Each bar lags behind the leftmost by `phaseOffset`, so leftmost
+        // collapses first and rebuilds last — wave sweeps left-to-right.
+        function standingFor(barIndex, loopT) {
+          var barPct = barIndex / (bars - 1);
+          var phaseOffset = barPct * 0.45;
+          var localT = loopT - phaseOffset;
+          if (localT < 0) localT += 1;
+
+          // localT cycle:
+          //   0.00 - 0.50  → standing (full)
+          //   0.50 - 0.72  → collapsing (transition to collapsed)
+          //   0.72 - 0.93  → collapsed (held)
+          //   0.93 - 1.00  → rebuilding (transition back to standing)
+          if (localT < 0.5) return 1;
+          if (localT < 0.72) return 1 - smoothstep(0.5, 0.72, localT);
+          if (localT < 0.93) return 0;
+          return smoothstep(0.93, 1.0, localT);
+        }
+
+        function applyState(rect, standing) {
+          var h = MIN_H + (MAX_H - MIN_H) * standing;
+          var opacity = MIN_OPACITY + (MAX_OPACITY - MIN_OPACITY) * standing;
+          rect.setAttribute('y', 40 - h / 2);
+          rect.setAttribute('height', h);
+          rect.setAttribute('opacity', opacity);
+        }
+
+        // Initial render — looks correct even before animation starts
+        for (var j = 0; j < bars; j++) {
+          applyState(rects[j], standingFor(j, 0));
+        }
+
+        // Respect reduced-motion preference — leave the static bars in place
+        var reduceMotion =
+          window.matchMedia &&
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) return;
+
+        var T_LOOP = 13000; // 13s — slow, architectural cadence
+
+        function tick(time) {
+          var loopT = (time % T_LOOP) / T_LOOP;
+          for (var k = 0; k < bars; k++) {
+            applyState(rects[k], standingFor(k, loopT));
+          }
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      })();
+    </script>
+  </body>
+</html>
