@@ -5,13 +5,13 @@
 
 ---
 
-Harmonic Wave is live and open to creators. This is what the platform holds today, in the creator's own terms — and why the material that frames a record now has to be readable by whatever is answering the question.
+This is what Harmonic Wave holds, in the creator's own terms — and why the material that frames a record now has to be readable by whatever is answering the question.
 
-## Where this stands
+## Why this note exists
 
-Harmonic Wave is the flagship product of Imagine Peak Studios, and as of today it is live and open to creators. Paid plans are on the way. The Partner track is open now for labels and integration teams.
+Harmonic Wave is the flagship product of Imagine Peak Studios. This note exists because the product has moved on from the language we were using to describe it, and a studio that publishes about infrastructure should keep its own descriptions current.
 
-This note is a status marker, not an announcement. It exists because the product has moved on from the language we were using to describe it, and a studio that publishes about infrastructure should keep its own descriptions current.
+What follows is what the platform does. It is not a roadmap and not an announcement. Harmonic Wave is not yet generally available — the waitlist is open and we are running early demos.
 
 ## What the platform holds
 
@@ -43,7 +43,7 @@ That last one matters more than it sounds. Consent that cannot be withdrawn on d
 
 ## Streaming is the floor, not the product
 
-It is worth being plain about the base case. A creator can upload content, take secure streaming URLs, and point any player at them — no experiences, no hosts, no collections required. Unlimited streaming is free on every plan.
+It is worth being plain about the base case. A creator can upload content, take secure streaming URLs, and point any player at them — no experiences, no hosts, no collections required.
 
 The structured layer is what the platform is for, but it is opt-in, and a creator who wants only reliable delivery gets that without buying the thesis.
 
@@ -57,8 +57,7 @@ We build the platform and we are also the first catalog on it. That is deliberat
 
 ## What to look at
 
-- The platform itself, at https://harmonicwave.ai — open to creators today.
-- The Partner track, if you are a label or an integration team and want the conversation to start at architecture rather than at signup.
+- The platform itself, at https://harmonicwave.ai.
 - The MCP server source, at https://github.com/imaginepeakstudios/matthewhartleymusic-mcp, if you would rather read the implementation than the positioning.
 - The longer argument behind all of it, in [Streaming was built for apps](https://imaginepeakstudios.com/insights/built-for-agents.md).
 
@@ -66,9 +65,9 @@ We build the platform and we are also the first catalog on it. That is deliberat
 
 ## See for yourself
 
-**The platform is open.**
+**See the work.**
 
-Harmonic Wave is live for creators, and the Partner track is open for labels and integration teams. Inspect it, then reach out with questions, coverage interest, or partnership conversations.
+Harmonic Wave is the studio's flagship product, and the MCP server behind our own catalog is public. Inspect it, then reach out with questions, coverage interest, or partnership conversations.
 
 - **Visit Harmonic Wave:** https://harmonicwave.ai
 - **Inspect the MCP server:** https://github.com/imaginepeakstudios/matthewhartleymusic-mcp
