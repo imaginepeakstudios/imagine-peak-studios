@@ -110,7 +110,7 @@ But consent is only meaningful operationally if the architecture *can* enforce i
 
 A *"we won't train on your work without permission"* clause in a platform's terms of service does not unlearn a model that has already been trained. A *"do not use for AI"* metadata flag does not bind a scraper that ignores it. A takedown notice does not reach the abstracted representation of the work in a model's weights. Policy commitments operate on a clock the technology has already outrun.
 
-Architecture-level consent enforcement is different. The system is built so that the disallowed use *cannot occur* — the source bytes physically don't flow to the AI inference layer; the renderer physically cannot serialize an AI wrapper and the source as a single derivative file. No policy review, no employee discretion, no future product pivot can change that without rebuilding the system.
+Architecture-level consent enforcement is different in kind. The goal is a system where the disallowed use *cannot occur* rather than one where it is merely forbidden: source media kept out of the AI inference layer, and a renderer with no path to serialize an AI wrapper and the source into a single derivative file. Stated that way it is a design property, and a design property has to be enforced at the boundary and auditable — otherwise it holds by convention, which is a promise wearing an engineer's clothes. So the question to put to any platform, including ours, is not whether it describes the architecture. It is whether it can show you the enforcement.
 
 For creators, the practical distinction is the difference between trusting a vendor and trusting a structure.
 
@@ -178,6 +178,6 @@ The leverage is real. So is the threat. The architecture decides which one creat
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*

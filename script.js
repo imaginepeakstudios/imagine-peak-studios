@@ -14,7 +14,12 @@ if (reduceMotion) {
       });
     },
     {
-      threshold: 0.18,
+      // Fire as soon as any part of the section enters. A fractional threshold
+      // scales with section height: 0.18 of a 1,748px section is 315px, so a
+      // tall section stayed at opacity 0 until the reader had already scrolled
+      // well into it. The bottom rootMargin is what holds the reveal back
+      // until the section is genuinely approaching.
+      threshold: 0,
       rootMargin: "0px 0px -8% 0px",
     }
   );

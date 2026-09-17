@@ -37,7 +37,7 @@ That is the whole architectural bet, and it is a narrow one. Harmonic Wave does 
 
 Three commitments do most of the work here, and all three are published on the platform rather than implied by it.
 
-Content is never used for AI training. The creator controls the structure, the access, and the creative intent behind every experience. And revocation is immediate: unpublish or pause, and every future request is blocked — no keys to rotate, no caches to wait out.
+Content is never used for AI training — a standing commitment rather than a setting to find. The creator controls the structure, the access, and the creative intent behind every experience. And revocation is immediate: unpublish or pause, and every future request is blocked — no keys to rotate, no caches to wait out.
 
 That last one matters more than it sounds. Consent that cannot be withdrawn on demand is not consent; it is a licence with better manners. An architecture where the creator can close the door in one action is the difference between control and the appearance of it.
 
@@ -51,7 +51,7 @@ The structured layer is what the platform is for, but it is opt-in, and a creato
 
 *The Time Is Now* is the studio's own record, released chapter by chapter and running on the platform end to end. Chapter I: Innocence & Heartbreak is live and streaming on the major platforms, with later chapters unlocking on release.
 
-It also runs as the first artist-owned MCP server, so any AI client that speaks the protocol can discover and stream the album as one continuous, story-driven experience. The server is public on GitHub under Apache 2.0 — inspectable rather than described.
+It also runs as an artist-owned MCP server, so a connected, compatible AI client can discover and stream the album as one continuous, story-driven experience. The server is public on GitHub under Apache 2.0 — inspectable rather than described.
 
 We build the platform and we are also the first catalog on it. That is deliberate. A media infrastructure claim that its own authors will not put a record through is a claim worth discounting.
 
@@ -75,6 +75,6 @@ Harmonic Wave is the studio's flagship product, and the MCP server behind our ow
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*
