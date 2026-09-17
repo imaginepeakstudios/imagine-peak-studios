@@ -1,19 +1,20 @@
 # Imagine Peak Studios
 
-> A consulting practice directing and building AI-native products for founders and teams — from concept to live system. Product strategy, sonic direction, and AI engineering under one roof. Founded by Matthew Hartley.
+> A studio that builds and ships its own AI-native platforms, then brings that product discipline to client work. Product strategy, media and sonic direction, and AI engineering under one roof. Flagship product: Harmonic Wave. Founded by Matthew Hartley.
 
 ## Background
 
-Imagine Peak Studios (IPS) operates at the intersection of software, storytelling, and production. The studio's current work includes:
+Imagine Peak Studios (IPS) operates at the intersection of software, storytelling, and production. The studio builds and ships its own platforms, then applies the same product discipline to client work. Current work:
 
-- **Harmonic Wave** — a media platform that exposes content catalogs as AI-native structured experiences. Open beta, v1.0 launching May 2026, patent pending.
-- **Matthew Hartley Music** — the first artist-owned MCP server (live April 2026). Exposes the album *The Time Is Now* as a structured, queryable catalog for any compatible AI client.
-- **RoboticWorks** — compliance infrastructure for autonomous systems. In development, patent pending.
+- **Harmonic Wave** — the studio's flagship product. An AI-native music platform that turns creator-approved release materials into agent-readable experiences, so artists and rights holders control how their music is presented by AI. Live and open to creators; paid plans on the way; Partner track open for labels and integration teams.
+- **Matthew Hartley Music** — the studio's first public artist catalog, and the first artist-owned MCP server (live April 2026). Exposes the album *The Time Is Now* as a structured, queryable catalog for any compatible AI client. Released chapter by chapter; Chapter I: Innocence & Heartbreak is live and streaming on the major platforms.
+- **RoboticWorks** — compliance infrastructure for autonomous systems in regulated environments. In development, patent pending.
 
 ## Insights
 
 Editorial briefs and analysis on AI-native media, infrastructure, and the systems shaping creative work.
 
+- [The release materials should travel with the release.](https://imaginepeakstudios.com/insights/harmonic-wave-agent-readable-releases.md): A product note on Harmonic Wave — what the platform holds today (context, storytelling, creative intent), what the creator keeps control of, and why the material that frames a record has to be readable by the agent answering the question. *(Product Note, September 2026.)*
 - [Creators have more leverage now than at any point in modern media.](https://imaginepeakstudios.com/insights/creators-copyright-preservation.md): Why AI agents are dismantling a century of distribution gatekeeping, how the same technology threatens to absorb the work without permission, and why consent and architecture decide whether creators keep their leverage. *(For Creators, June 2026.)*
 - [Streaming was built for apps. The next era will be built for agents.](https://imaginepeakstudios.com/insights/built-for-agents.md): The flagship thesis on why AI agents — not apps — are the next interface layer for media, what changes when delivery is structured rather than passive, and why creators need control over context and copyright. *(The Thesis, May 2026.)*
 - [Streaming is the infrastructure. The new front end is now forming.](https://imaginepeakstudios.com/insights/labels-ai-discovery.md): How AI agents are reshaping music discovery, and what catalog labels, A&R, and rights holders should pay attention to now. *(For Labels & A&R, April 2026.)*
@@ -28,8 +29,8 @@ Press releases, media coverage, and announcements from Imagine Peak Studios.
 
 ## Selected Projects
 
-- [Harmonic Wave](https://harmonicwave.ai) — Live platform, headless media-to-agent experience infrastructure
-- [Matthew Hartley Music](https://matthewhartleymusic.com) — Artist platform with the first artist-owned MCP server
+- [Harmonic Wave](https://harmonicwave.ai) — Flagship product. Live AI-native music platform; creator-controlled, agent-readable experiences over MCP
+- [Matthew Hartley Music](https://matthewhartleymusic.com) — The studio's first public artist catalog, with the first artist-owned MCP server
 - [Matthew Hartley Music MCP repo](https://github.com/imaginepeakstudios/matthewhartleymusic-mcp) — Apache 2.0, with install snippets for Claude Desktop, Claude Code, and any compatible AI client
 - [RoboticWorks](https://roboticworks.ai) — In development
 
@@ -40,6 +41,6 @@ Press releases, media coverage, and announcements from Imagine Peak Studios.
 ## Optional
 
 - [Homepage](https://imaginepeakstudios.com/): Hero, projects, services, credibility, method, contact
-- [Services](https://imaginepeakstudios.com/#services): Product Strategy, Sonic Direction, Systems & Experience Development
-- [Method](https://imaginepeakstudios.com/#method): Human direction. AI engineering. Tools include Claude Code, Codex, Gemini, ElevenLabs, Suno.
+- [Services](https://imaginepeakstudios.com/#services): Product Strategy, Media & Sonic Direction, Systems & Experience Development
+- [Method](https://imaginepeakstudios.com/#method): Human direction. AI engineering. Tools include Figma, Adobe CC, Claude Code, ElevenLabs, Suno.
 - [Contact](mailto:hello@imaginepeakstudios.com): hello@imaginepeakstudios.com

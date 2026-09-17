@@ -127,6 +127,6 @@ A short working session for A&R, label leadership, and catalog strategy folks th
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, sonic direction, and AI engineering. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with multiple USPTO patent filings. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*
