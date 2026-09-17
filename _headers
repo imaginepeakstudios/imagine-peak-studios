@@ -1,0 +1,15 @@
+# styles.css and script.js are referenced unversioned (/styles.css, /script.js),
+# so a visitor's cached copy must never outlive a deploy. The Pages default of
+# max-age=14400 meant new HTML shipped against four-hour-old CSS, which renders
+# as a broken page rather than a slightly stale one. Revalidate on every load:
+# the ETag makes that a 304 in the normal case, so the cost is one conditional
+# request, not a re-download.
+#
+# If these ever get content-hashed filenames, delete this file and let them
+# cache for a year instead.
+
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/script.js
+  Cache-Control: public, max-age=0, must-revalidate
