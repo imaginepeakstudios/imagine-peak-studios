@@ -32,7 +32,7 @@ The timeline:
 - **November 2024** — Anthropic releases MCP. The standard exists.
 - **February 2025** — Anthropic releases Claude Code. AI engineering starts becoming a daily-driver workflow.
 - **February 2026** — Claude Opus 4.6 lands. Combined with Claude Code, AI code generation crosses into production quality and on-the-fly UI creation becomes viable. Effectively no barrier to entry for technical creators. **Apps are being democratized.** A single person can now ship real apps end-to-end.
-- **April 2026** — The first artist-owned MCP server ships. Proof of all of the above, in production.
+- **April 2026** — An artist-owned MCP server ships. Proof of all of the above, in production.
 
 Throughout this timeline, AI agents (Claude, ChatGPT, Gemini, Perplexity) have become primary discovery surfaces in technical and influential user pockets — the demand surface for what's now possible. None of the major DSPs have built this layer yet — or haven't announced it publicly. They face a structural problem the artist-owned path doesn't: DSP licensing is built around in-app playback, and the app itself is the experience — fixed player, fixed UI, fixed business model. Exposing catalogs to external agents that generate experiences outside that frame would require renegotiating rights across labels, publishers, performers, and territories. Even when DSPs do shift, the fastest paths leave the artist out of the match. The artists and labels who move first set the stage for what this layer should be — with rights they already control.
 
@@ -85,7 +85,7 @@ That's an A&R question now.
 
 ## Where Harmonic Wave fits
 
-[Harmonic Wave](https://harmonicwave.ai) is the platform behind the first artist-owned MCP — built to expose a music catalog as an AI-native structured experience while preserving copyright control over the underlying media. It launched in April 2026 with the release of [*The Time Is Now*](https://imaginepeakstudios.com/press/the-time-is-now-launch), an album produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and released chapter by chapter rather than as a single drop.
+[Harmonic Wave](https://harmonicwave.ai) is the platform behind that artist-owned MCP — built to expose a music catalog as an AI-native structured experience while preserving copyright control over the underlying media. It launched in April 2026 with the release of [*The Time Is Now*](https://imaginepeakstudios.com/press/the-time-is-now-launch), an album produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and released chapter by chapter rather than as a single drop.
 
 The platform exists because building this layer is not prompt-and-go. *"Here's a prompt, generate me an MCP platform"* doesn't work — real platforms take months of architectural decisions, schema iteration, integration work, and active management, evolving continuously as the protocol layer evolves. **But once a real platform exists, the app side IS prompt-and-go.** Someone does the hard architecture work once; everyone after gets to spin up listening experiences on top.
 
@@ -101,17 +101,17 @@ The MCP server is the easy part. The hard parts:
 - **Audio + delivery infrastructure.** Signed-URL streaming, release gating, sequence-aware access control. Full stack from metadata to bytes.
 - **AI narration baked in.** Artist-defined voiceover that introduces, contextualizes, and threads songs together. The catalog speaks with its own voice on every surface.
 - **Artist visual identity.** The dynamically-generated experience inherits the artist's visual world — palettes, typography, art direction, motion — not a generic player aesthetic. Identity travels with the work the way voice does.
-- **Distribution everywhere.** One MCP server, accessible from any AI client — Claude, ChatGPT, Gemini, Perplexity, enterprise tools. Expose once, surface everywhere.
+- **Distribution everywhere.** One MCP server, accessible from connected, compatible AI clients — Claude, ChatGPT, Gemini, Perplexity, enterprise tools. Expose once, surface everywhere.
 - **Cross-format extensibility.** Music today. Podcasts, video, narrative media tomorrow. Multi-format catalogs in one place.
 - **Team-maintained architecture** that evolves with MCP, agents, and listening surfaces. Your catalog stays current without tracking every protocol change.
 
-The platform is currently in open beta with a v1.0 planned launch in June 2026. It extends beyond music into podcasts, video, and narrative media — anywhere structured AI delivery matters. The underlying technology is patent pending.
+As of September 2026 the platform is not yet generally available — the waitlist is open and early demos are running. It extends beyond music into podcasts, video, and narrative media — anywhere structured AI delivery matters. The underlying technology is patent pending.
 
 ## What to do this quarter
 
 - **Experience it firsthand.** Open [experience.matthewhartleymusic.com](https://experience.matthewhartleymusic.com) — the live Experience Media Player for *The Time Is Now*. This is what Harmonic Wave–powered listening feels like.
 - **Audit one artist on your roster.** Use the two A&R diagnostic questions above. Whichever artist comes closest to passing — they're the one to pilot this layer with.
-- **Inspect the first artist-owned MCP server** — connect it to Claude, ChatGPT, Gemini, Perplexity, or any compatible AI client and stream the available catalog yourself: [github.com/imaginepeakstudios/matthewhartleymusic-mcp](https://github.com/imaginepeakstudios/matthewhartleymusic-mcp)
+- **Inspect the artist-owned MCP server** — connect it to Claude, ChatGPT, Gemini, Perplexity, or any compatible AI client and stream the available catalog yourself: [github.com/imaginepeakstudios/matthewhartleymusic-mcp](https://github.com/imaginepeakstudios/matthewhartleymusic-mcp)
 - **Book a working session** if your team is wrestling with AI strategy, catalog activation, or A&R direction in this layer.
 
 ---
@@ -127,6 +127,6 @@ A short working session for A&R, label leadership, and catalog strategy folks th
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, the first artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, released as an artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*
