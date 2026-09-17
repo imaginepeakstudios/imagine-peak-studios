@@ -1348,6 +1348,12 @@ p {
   object-fit: contain;
 }
 
+/* The Harmonic Wave mark is a wide transparent glyph rather than a square
+   tile, so object-fit letterboxes it. Less inset lets it read at size. */
+.project-visual-bug-mark {
+  padding: 8px;
+}
+
 /* The Matthew Hartley mark sits tighter inside its own artwork, so it needs
    more inset than the other two to read at the same optical size. */
 .project-visual-bug-tile {
