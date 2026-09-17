@@ -42,5 +42,5 @@ Press releases, media coverage, and announcements from Imagine Peak Studios.
 
 - [Homepage](https://imaginepeakstudios.com/): Hero, projects, services, credibility, method, contact
 - [Services](https://imaginepeakstudios.com/#services): Product Strategy, Media & Sonic Direction, Systems & Experience Development
-- [Method](https://imaginepeakstudios.com/#method): Human direction. AI engineering. Tools include Figma, Adobe CC, Claude Code, ElevenLabs, Suno.
+- [Method](https://imaginepeakstudios.com/#method): Human direction. AI engineering. Tools and vendors include Claude Design, Figma, Adobe CC, Claude, ChatGPT, Gemini, Grok, ElevenLabs, Deepgram, Lyra, Suno, Udio, Music AI, GPT Image, Nano Banana, Seedance, Veo, HeyGen, Tavus, Cloudflare, WP Engine.
 - [Contact](mailto:hello@imaginepeakstudios.com): hello@imaginepeakstudios.com

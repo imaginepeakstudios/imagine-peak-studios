@@ -849,10 +849,9 @@ p {
 }
 
 .method-panel {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  padding: 1.25rem;
+  display: grid;
+  gap: 0.85rem;
+  padding: 1.35rem 1.25rem;
   margin-bottom: 0.75rem;
   border-radius: 30px;
   background:
@@ -863,7 +862,30 @@ p {
     0 18px 44px rgba(17, 17, 17, 0.14);
 }
 
-.method-panel span {
+.method-group {
+  display: grid;
+  grid-template-columns: 4.75rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.method-group-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.method-group-label {
+  margin: 0;
+  padding-top: 0.72rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--light-muted);
+}
+
+.method-group-items span {
   display: inline-flex;
   align-items: center;
   min-height: 34px;
@@ -1306,14 +1328,24 @@ p {
   bottom: 1.1rem;
   z-index: 1;
   box-sizing: border-box;
+  display: block;
   width: 86px;
   height: 86px;
   padding: 11px;
   border-radius: 50%;
-  object-fit: contain;
   background: #0b0f14;
   border: 1px solid rgba(245, 244, 239, 0.24);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* The disc lives on the wrapper, never on the <img>. border-radius on a
+   replaced element scales the clip onto the CONTENT box, so with object-fit
+   + padding it closes in on the artwork and chamfers its corners. */
+.project-visual-bug img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* The Matthew Hartley mark sits tighter inside its own artwork, so it needs
@@ -1357,7 +1389,7 @@ p {
 }
 
 .project-visual-bug-onlight {
-  padding: 22px;
+  padding: 16px;
   background: #fafaf8;
   border-color: rgba(17, 17, 17, 0.14);
   box-shadow: 0 6px 18px rgba(17, 17, 17, 0.14);
@@ -1686,8 +1718,12 @@ p {
     padding: 15px;
   }
 
+  .method-group {
+    grid-template-columns: 3.9rem minmax(0, 1fr);
+  }
+
   .project-visual-bug-onlight {
-    padding: 16px;
+    padding: 12px;
   }
 
   .proof-strip {
