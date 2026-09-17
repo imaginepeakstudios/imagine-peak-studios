@@ -35,7 +35,7 @@ I have been exploring this through my own album, *The Time Is Now*. It is planne
 
 That question is still open. A guided presentation should be judged by what it does for a particular work and its listeners, not by an assumption that more framing is always better. The strongest applications will preserve the artist's intent, respect the listening experience, and learn from what audiences actually do.
 
-Streaming gave albums reach. The next challenge is making sure their meaning can travel too. An album does not need to become something else to matter in the AI era. It needs a better way for the people who made it to remain part of its story.
+Streaming gave albums reach. An album in the AI era does not need to become something else. It just needs the artist’s story and liner notes to travel with it.
 
 ---
 
