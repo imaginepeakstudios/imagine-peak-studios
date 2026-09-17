@@ -1056,11 +1056,11 @@ p {
 
 .consent-banner {
   position: fixed;
-  left: 24px;
-  right: auto;
+  left: auto;
+  right: 24px;
   bottom: 24px;
   z-index: 30;
-  width: min(calc(100vw - 48px), 460px);
+  width: min(calc(100vw - 48px), 390px);
   background: rgba(252, 252, 250, 0.97);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -1082,24 +1082,26 @@ p {
   max-width: none;
   margin: 0;
   display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  padding: 0.7rem 0.85rem 0.7rem 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.75rem 0.9rem;
 }
 
 .consent-copy {
   margin: 0;
   color: var(--muted);
-  font-size: 0.74rem;
-  line-height: 1.45;
+  font-size: 0.72rem;
+  line-height: 1.4;
   max-width: none;
 }
 
 .consent-actions {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
   gap: 0.45rem;
-  flex-shrink: 0;
 }
 
 .consent-btn {
@@ -1689,18 +1691,6 @@ p {
     right: 16px;
     bottom: 16px;
     width: auto;
-  }
-
-  .consent-shell {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.7rem;
-    padding: 0.85rem 0.95rem;
-  }
-
-  .consent-actions {
-    align-self: stretch;
-    justify-content: flex-end;
   }
 
   .now-shell {
