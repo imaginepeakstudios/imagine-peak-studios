@@ -577,18 +577,6 @@ p {
   transform: translateY(0);
 }
 
-.ambient-section::before {
-  content: "";
-  position: absolute;
-  inset: auto auto -80px -40px;
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(17, 17, 17, 0.03), transparent 68%);
-  pointer-events: none;
-  filter: blur(12px);
-}
-
 .section-head {
   display: grid;
   gap: 1rem;
@@ -860,22 +848,10 @@ p {
   text-transform: uppercase;
 }
 
-.method-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 3rem;
-  align-items: start;
-}
-
-.method-copy {
-  display: grid;
-  gap: 1.25rem;
-}
-
 .method-panel {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.6rem;
   padding: 1.25rem;
   margin-bottom: 0.75rem;
   border-radius: 30px;
@@ -890,16 +866,28 @@ p {
 .method-panel span {
   display: inline-flex;
   align-items: center;
-  min-height: 38px;
-  padding: 0 1rem;
+  min-height: 34px;
+  padding: 0 0.85rem;
   border: 1px solid rgba(245, 244, 239, 0.1);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.04);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
   color: var(--light-ink);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.method-copy {
+  display: grid;
+  gap: 1.25rem;
 }
 
 .contact .text-link {
@@ -1265,8 +1253,12 @@ p {
 }
 
 /* --- Flagship product screenshot (Harmonic Wave) --- */
-.feature-primary {
-  grid-template-columns: minmax(0, 1fr) 520px;
+/* The flagship visual track must be able to SHRINK. A fixed `520px` track
+   never yields, so between the 900px breakpoint and roughly 1200px it ate the
+   text column and the copy ran tall and narrow. minmax() lets it give way, and
+   the card stacks at 1080px rather than holding two cramped columns. */
+.feature-media {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
 }
 
 .project-visual-wide {
@@ -1274,17 +1266,109 @@ p {
   min-height: 0;
 }
 
+@media (max-width: 1080px) {
+  .feature-media {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-media .project-visual,
+  .feature-media .project-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .feature-media .project-visual-wide {
+    max-width: 560px;
+    justify-self: start;
+  }
+}
+
+/* All three project images share one frame height, keyed to the Harmonic Wave
+   image's own aspect (1400x781). Taller sources (Matthew Hartley) crop from the
+   BOTTOM via `object-position: center top`; wider ones (RoboticWorks) scale to
+   fill the height and lose a little at the sides, since they have no bottom to
+   give. */
 .project-screenshot-frame {
+  position: relative;
   display: block;
   padding: 0;
   overflow: hidden;
+  aspect-ratio: 1400 / 781;
   background: #0b0f14;
+}
+
+/* Corner bug — the app icon as a circular badge, lower left. The icon carries
+   its own dark tile, so it needs no scrim over the photo; a thin ring and a
+   soft shadow are enough to seat it. */
+.project-visual-bug {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 1.1rem;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 86px;
+  height: 86px;
+  padding: 11px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #0b0f14;
+  border: 1px solid rgba(245, 244, 239, 0.24);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* The Matthew Hartley mark sits tighter inside its own artwork, so it needs
+   more inset than the other two to read at the same optical size. */
+.project-visual-bug-tile {
+  padding: 20px;
+}
+
+.project-visual-lockup {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 1.1rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.project-visual-lockup .project-visual-bug {
+  position: static;
+  left: auto;
+  bottom: auto;
+}
+
+.project-visual-wordmark {
+  font-size: 1.28rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  color: #1f2a37;
+}
+
+/* RoboticWorks runs light — off-white header, navy mark — so its frame and bug
+   invert the treatment the two music cards use. */
+/* The RoboticWorks header is nearly white, so the frame needs a visible edge or
+   the image dissolves into the page. Same grey as the Services accent boxes
+   (#e7e7e7) with a darker rule than the two dark cards need. */
+.project-screenshot-frame-light {
+  background: #e7e7e7;
+  border-color: rgba(17, 17, 17, 0.18);
+}
+
+.project-visual-bug-onlight {
+  padding: 22px;
+  background: #fafaf8;
+  border-color: rgba(17, 17, 17, 0.14);
+  box-shadow: 0 6px 18px rgba(17, 17, 17, 0.14);
 }
 
 .project-screenshot {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* --- Footer secondary links --- */
@@ -1520,11 +1604,6 @@ p {
     font-size: 2.2rem;
   }
 
-  .ambient-section::before {
-    width: 180px;
-    height: 180px;
-  }
-
   .services .service-grid {
     gap: 1.1rem;
   }
@@ -1582,6 +1661,35 @@ p {
   /* Separator dots are absolutely positioned, so a wrapped row would start
      with a dangling dot. Below 900px the strip wraps — drop them and let the
      gap do the separating. */
+  /* The bug is a fixed 86px, which is ~16% of the 520px desktop frame but a
+     quarter of the frame on a phone. Scale it down so it keeps the same
+     optical weight. */
+  .project-visual-bug {
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    left: 0.85rem;
+    bottom: 0.85rem;
+  }
+
+  .project-visual-lockup {
+    left: 0.85rem;
+    bottom: 0.85rem;
+    gap: 0.55rem;
+  }
+
+  .project-visual-wordmark {
+    font-size: 1.02rem;
+  }
+
+  .project-visual-bug-tile {
+    padding: 15px;
+  }
+
+  .project-visual-bug-onlight {
+    padding: 16px;
+  }
+
   .proof-strip {
     gap: 0.35rem 1.3rem;
   }
@@ -1601,23 +1709,7 @@ p {
     font-size: 0.8rem;
   }
 
-  .method-panel {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.5rem;
-    padding: 1rem;
-  }
-
-  .method-panel span {
-    min-height: 34px;
-    padding: 0 0.55rem;
-    font-size: 0.72rem;
-    letter-spacing: 0.02em;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .credibility-note {
+      .credibility-note {
     gap: 0.55rem;
   }
 
