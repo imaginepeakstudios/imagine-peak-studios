@@ -3,3 +3,8 @@
 
 # Insights — moved from /briefs/ to /insights/ (April 2026)
 /briefs/* /insights/:splat 301
+
+# Product Note retired 2026-09-17 (superseded by the A&R essay). It was live
+# and present in a crawled sitemap, so the URL redirects rather than 404s.
+/insights/harmonic-wave-agent-readable-releases /insights/ 301
+/insights/harmonic-wave-agent-readable-releases.md /insights/ 301
