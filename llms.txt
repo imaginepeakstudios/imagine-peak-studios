@@ -7,7 +7,7 @@
 Imagine Peak Studios (IPS) operates at the intersection of software, storytelling, and production. The studio builds and ships its own platforms, then applies the same product discipline to client work. Current work:
 
 - **Harmonic Wave** — the studio's flagship product. An AI-native music platform that turns creator-approved release materials into agent-readable experiences, so artists and rights holders control how their music is presented by AI. Not yet generally available — waitlist open, early demos running.
-- **Matthew Hartley Music** — the studio's first public artist catalog, with an artist-owned MCP server (live April 2026). Exposes the album *The Time Is Now* as a structured, queryable catalog for any compatible AI client. Released chapter by chapter as an auditory and visual experience, streaming on the major platforms as each one arrives.
+- **Matthew Hartley Music** — the studio's first public artist catalog, with an artist-owned MCP server (live April 2026). Exposes the album *The Time Is Now* as a structured, queryable catalog for compatible, connected AI clients. Being released chapter by chapter as an auditory and visual experience — Chapter I is streaming on the major platforms, later chapters are planned.
 - **RoboticWorks** — compliance infrastructure for autonomous systems in regulated environments. In research and development, patent pending.
 
 ## Insights

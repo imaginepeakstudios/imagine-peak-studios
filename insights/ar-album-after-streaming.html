@@ -363,6 +363,20 @@
         margin: 0 0 2.25rem;
       }
 
+      .brief-cta-deck a {
+        color: var(--light-ink, #f5f4ef);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--light-rule, rgba(245, 244, 239, 0.18));
+        transition: text-decoration-color 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-deck a:hover {
+          text-decoration-color: var(--light-ink, #f5f4ef);
+        }
+      }
+
       .brief-cta-actions {
         display: flex;
         flex-wrap: wrap;
@@ -416,6 +430,16 @@
         line-height: 1.5;
         color: var(--light-muted, rgba(245, 244, 239, 0.72));
         max-width: 56ch;
+      }
+
+      /* The global `p` rule (styles.css) otherwise repaints this bio in --muted
+         dark grey on the near-black CTA panel and at full body size. Inherit the
+         block's own light-muted colour and smaller size so it stays readable
+         while still reading as secondary to the CTA. */
+      .brief-author p {
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
       }
 
       .brief-author strong {
@@ -549,7 +573,7 @@
                 For A&amp;R, that is a familiar judgment in a new setting. Developing an artist has always involved listening for what makes the work distinct, then helping that identity survive the demands of distribution and promotion. AI adds another surface where those decisions may need to travel. The opportunity is to make the artist's approved materials useful beyond a single campaign or platform, while keeping the artist in control of how the work is framed.
               </p>
               <p>
-                I have been exploring this through my own album, <em>The Time Is Now</em>. It is planned as a story told across chapters — an auditory and visual experience. Building that first experience raised the larger question behind <a href="https://harmonicwave.ai" target="_blank" rel="noopener noreferrer">Harmonic Wave</a>: how might an artist's direction remain attached to the music when a listener arrives through a website, a streaming link, or an AI agent?
+                I have been exploring this through my own album, <em>The Time Is Now</em>. Chapter I is available now, and the work is planned as a story told across chapters — an auditory and visual experience. Building that first experience raised the larger question behind <a href="https://harmonicwave.ai" target="_blank" rel="noopener noreferrer">Harmonic Wave</a>: how might an artist's direction remain attached to the music when a listener arrives through a website, a streaming link, or an AI agent?
               </p>
               <p>
                 That question is still open. A guided presentation should be judged by what it does for a particular work and its listeners, not by an assumption that more framing is always better. The strongest applications will preserve the artist's intent, respect the listening experience, and learn from what audiences actually do.
@@ -567,27 +591,27 @@
             <div class="eyebrow">For A&amp;R</div>
             <h2>Talk it through.</h2>
             <p class="brief-cta-deck">
-              If you are thinking about how an artist's direction survives the move into AI-mediated discovery, that is a conversation worth having — whether or not a platform is involved.
+              If you’re thinking about how an artist’s direction travels with the music into AI-mediated discovery, that’s a conversation worth having, whether or not a platform is involved.
             </p>
             <div class="brief-cta-actions">
               <a
                 class="brief-cta-btn"
+                href="mailto:hello@imaginepeakstudios.com?subject=Brief%3A%20The%20Album%20After%20Streaming"
+              >
+                Email Matthew <span class="arrow-glyph" aria-hidden="true">→&#xFE0E;</span>
+              </a>
+              <a
+                class="brief-cta-secondary"
                 href="https://harmonicwave.ai"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit Harmonic Wave <span class="arrow-glyph" aria-hidden="true">→&#xFE0E;</span>
-              </a>
-              <a
-                class="brief-cta-secondary"
-                href="mailto:hello@imaginepeakstudios.com?subject=Brief%3A%20The%20Album%20After%20Streaming"
-              >
-                Or email hello@imaginepeakstudios.com
+                Explore Harmonic Wave
               </a>
             </div>
             <div class="brief-author">
               <p>
-                <strong>Matthew Hartley</strong> is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind <em>The Time Is Now</em>, released as an artist-owned MCP server.
+                <strong>Matthew Hartley</strong> is the founder of Imagine Peak Studios and the independent artist behind <em>The Time Is Now</em>. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.
               </p>
             </div>
           </div>

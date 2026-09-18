@@ -389,6 +389,20 @@
         margin: 0 0 2.25rem;
       }
 
+      .brief-cta-deck a {
+        color: var(--light-ink, #f5f4ef);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--light-rule, rgba(245, 244, 239, 0.18));
+        transition: text-decoration-color 0.2s ease;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        .brief-cta-deck a:hover {
+          text-decoration-color: var(--light-ink, #f5f4ef);
+        }
+      }
+
       .brief-cta-actions {
         display: flex;
         flex-wrap: wrap;
@@ -442,6 +456,16 @@
         line-height: 1.5;
         color: var(--light-muted, rgba(245, 244, 239, 0.72));
         max-width: 56ch;
+      }
+
+      /* The global `p` rule (styles.css) otherwise repaints this bio in --muted
+         dark grey on the near-black CTA panel and at full body size. Inherit the
+         block's own light-muted colour and smaller size so it stays readable
+         while still reading as secondary to the CTA. */
+      .brief-author p {
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
       }
 
       .brief-author strong {
@@ -826,30 +850,30 @@
 
         <section class="brief-cta">
           <div class="shell reading-shell">
-            <div class="eyebrow">Talk to Matthew</div>
-            <h2>Twenty minutes. No pitch. Your questions.</h2>
+            <div class="eyebrow">For Creators</div>
+            <h2>Talk it through.</h2>
             <p class="brief-cta-deck">
-              A short working session for creators, managers, and rights teams thinking about how to participate in the agent era without giving up architectural control of the work. These are conversations, not pitches.
+              If you’re thinking about how consent and architecture decide whether creators keep their leverage in the agent era, that’s a conversation worth having, whether or not a platform is involved.
             </p>
             <div class="brief-cta-actions">
               <a
                 class="brief-cta-btn"
-                href="https://calendly.com/matthew-hartley/strategy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:hello@imaginepeakstudios.com?subject=Brief%3A%20Creators%20%26%20Copyright%20Preservation"
               >
-                Book a 20-min strategy call <span class="arrow-glyph" aria-hidden="true">→&#xFE0E;</span>
+                Email Matthew <span class="arrow-glyph" aria-hidden="true">→&#xFE0E;</span>
               </a>
               <a
                 class="brief-cta-secondary"
-                href="mailto:hello@imaginepeakstudios.com?subject=Brief%3A%20Creators%20%26%20Copyright%20Preservation"
+                href="https://harmonicwave.ai"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Or reply by email
+                Explore Harmonic Wave
               </a>
             </div>
             <div class="brief-author">
               <p>
-                <strong>Matthew Hartley</strong> is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind <em>The Time Is Now</em>, released as an artist-owned MCP server.
+                <strong>Matthew Hartley</strong> is the founder of Imagine Peak Studios and the independent artist behind <em>The Time Is Now</em>. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.
               </p>
             </div>
           </div>

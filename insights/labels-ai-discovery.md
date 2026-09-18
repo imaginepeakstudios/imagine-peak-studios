@@ -116,17 +116,17 @@ As of September 2026 the platform is not yet generally available — the waitlis
 
 ---
 
-## Talk to Matthew
+## For Labels & A&R
 
-**Twenty minutes. No pitch. Your questions.**
+**Talk it through.**
 
-A short working session for A&R, label leadership, and catalog strategy folks thinking about how this shift affects your roster, your catalog, or your business model. These are conversations, not pitches.
+If you’re thinking about what AI-mediated discovery means for your roster, your catalog, or your business model, that’s a conversation worth having, whether or not a platform is involved.
 
-- **Book a 20-min strategy call:** https://calendly.com/matthew-hartley/strategy
-- **Or reply by email:** hello@imaginepeakstudios.com
+- **Email Matthew:** hello@imaginepeakstudios.com
+- **Explore Harmonic Wave:** https://harmonicwave.ai
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, released as an artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios and the independent artist behind *The Time Is Now*. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*

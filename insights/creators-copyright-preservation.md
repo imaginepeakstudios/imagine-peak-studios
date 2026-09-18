@@ -174,10 +174,19 @@ The leverage is real. So is the threat. The architecture decides which one creat
 
 *Imagine Peak Studios is the consulting practice behind [Harmonic Wave](https://harmonicwave.ai), the platform behind that artist-owned MCP server — built around the consent-and-architecture commitments above. We work with creators, labels, and platforms thinking about how to participate in the agent era without giving up architectural control of the work.*
 
-- **Email:** hello@imaginepeakstudios.com
+---
+
+## For Creators
+
+**Talk it through.**
+
+If you’re thinking about how consent and architecture decide whether creators keep their leverage in the agent era, that’s a conversation worth having, whether or not a platform is involved.
+
+- **Email Matthew:** hello@imaginepeakstudios.com
+- **Explore Harmonic Wave:** https://harmonicwave.ai
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, released as an artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios and the independent artist behind *The Time Is Now*. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*

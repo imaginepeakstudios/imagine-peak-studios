@@ -54,7 +54,7 @@ The thesis is not speculative. As of April 2026:
 
 - A working artist-owned MCP server is live in production at [github.com/imaginepeakstudios/matthewhartleymusic-mcp](https://github.com/imaginepeakstudios/matthewhartleymusic-mcp). It connects to Claude, ChatGPT, Gemini, or any compatible AI client.
 - A reference Experience Player driven by that server is live at [experience.matthewhartleymusic.com](https://experience.matthewhartleymusic.com).
-- The catalog behind both — *The Time Is Now*, debut album by Matthew Hartley — was produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and released chapter by chapter rather than as a single drop.
+- The catalog behind both — *The Time Is Now*, debut album by Matthew Hartley — was produced in part by Grammy-winning producer David Kershenbaum (Tracy Chapman, Joe Jackson, Bryan Adams) and is being released chapter by chapter rather than as a single drop.
 - The underlying architecture is patent pending.
 
 This is the proof of concept, in production, available for anyone to inspect — an artist-owned MCP catalog, shipped publicly.
@@ -137,18 +137,17 @@ The proof that shipped is a music catalog because that's what was built first. T
 
 ---
 
-## See for yourself
+## The Thesis
 
-**The thesis is in production.**
+**Talk it through.**
 
-Working artist-owned MCP server. Live Experience Player. Patent-pending architecture. The system is public — inspect it, then reach out with questions, coverage interest, or partnership conversations.
+If you’re thinking about what changes when media is delivered through agents rather than apps, that’s a conversation worth having, whether or not a platform is involved. The [live Experience Player](https://experience.matthewhartleymusic.com) is one version of it running today.
 
-- **See the live Experience Player:** https://experience.matthewhartleymusic.com
-- **Inspect the MCP server:** https://github.com/imaginepeakstudios/matthewhartleymusic-mcp
-- **Email:** hello@imaginepeakstudios.com
+- **Email Matthew:** hello@imaginepeakstudios.com
+- **Explore Harmonic Wave:** https://harmonicwave.ai
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, released as an artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios and the independent artist behind *The Time Is Now*. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*

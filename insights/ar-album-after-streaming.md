@@ -31,7 +31,7 @@ This does not mean every song needs a narrated introduction or every album needs
 
 For A&R, that is a familiar judgment in a new setting. Developing an artist has always involved listening for what makes the work distinct, then helping that identity survive the demands of distribution and promotion. AI adds another surface where those decisions may need to travel. The opportunity is to make the artist's approved materials useful beyond a single campaign or platform, while keeping the artist in control of how the work is framed.
 
-I have been exploring this through my own album, *The Time Is Now*. It is planned as a story told across chapters — an auditory and visual experience. Building that first experience raised the larger question behind [Harmonic Wave](https://harmonicwave.ai): how might an artist's direction remain attached to the music when a listener arrives through a website, a streaming link, or an AI agent?
+I have been exploring this through my own album, *The Time Is Now*. Chapter I is available now, and the work is planned as a story told across chapters — an auditory and visual experience. Building that first experience raised the larger question behind [Harmonic Wave](https://harmonicwave.ai): how might an artist's direction remain attached to the music when a listener arrives through a website, a streaming link, or an AI agent?
 
 That question is still open. A guided presentation should be judged by what it does for a particular work and its listeners, not by an assumption that more framing is always better. The strongest applications will preserve the artist's intent, respect the listening experience, and learn from what audiences actually do.
 
@@ -43,13 +43,13 @@ Streaming gave albums reach. In the AI era, the artist’s story and liner notes
 
 **Talk it through.**
 
-If you are thinking about how an artist's direction survives the move into AI-mediated discovery, that is a conversation worth having — whether or not a platform is involved.
+If you’re thinking about how an artist’s direction travels with the music into AI-mediated discovery, that’s a conversation worth having, whether or not a platform is involved.
 
-- **Book a conversation:** https://calendly.com/matthew-hartley/strategy
-- **Email:** hello@imaginepeakstudios.com
+- **Email Matthew:** hello@imaginepeakstudios.com
+- **Explore Harmonic Wave:** https://harmonicwave.ai
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios — a consulting practice covering product strategy, media and sonic direction, and AI engineering. 25+ year software industry veteran with hands-on experience designing and building AI-native systems, from product concept and technical architecture through working software and live user experiences. Independent artist behind *The Time Is Now*, released as an artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios and the independent artist behind *The Time Is Now*. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*
