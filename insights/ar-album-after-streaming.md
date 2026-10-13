@@ -35,7 +35,7 @@ The practical question is how that direction can travel with the music when a li
 
 **See media context in practice:** [The Frequency Experience](https://harmonicwave.ai/p/1f3996b1fe4916f0dbbde4d1fe1c87e2) brings together liner notes and release context with an understanding of the song that goes beyond conventional metadata to capture its shape, progression, mood, creative character, and the moments best suited to short-form hooks. Here, that context informs a production brief, host-led visual experience, and supporting shorts. Video is one expression of the context, not the product itself. Harmonic Wave is media context management for the AI era, making context portable while keeping the original recording intact and out of AI training.
 
-The format should follow the work. Context might help an agent introduce a song accurately, inform a visual treatment, identify useful short-form hooks, or remain in the background until a listener asks for more. The strongest applications will preserve the artist’s intent, respect the listening experience, and know when to get out of the way.
+The format should follow the work. Context might help an agent introduce a song accurately, inform a visual treatment, or remain in the background until a listener asks for more. The strongest applications will preserve the artist’s intent, respect the listening experience, and know when to get out of the way.
 
 Streaming gave albums reach. In the AI era, the artist’s story and liner notes can travel with the music too, carrying the artist’s intent into new experiences without changing what an album is.
 
