@@ -76,6 +76,9 @@ if (consentBanner) {
   try { stored = localStorage.getItem("ips-consent"); } catch (e) {}
 
   if (!stored) {
+    // Show it as a strip in the page flow, just under the header
+    const anchor = document.querySelector(".nav-backdrop") || document.querySelector(".site-header");
+    if (anchor) anchor.after(consentBanner);
     consentBanner.hidden = false;
     requestAnimationFrame(() => consentBanner.classList.add("is-visible"));
   }
@@ -96,7 +99,17 @@ if (consentBanner) {
       }
 
       consentBanner.classList.remove("is-visible");
-      setTimeout(() => { consentBanner.hidden = true; }, 220);
+      setTimeout(() => {
+        // If the strip has scrolled up under the header, offset its removal
+        // so the text being read doesn't jump. Browsers with scroll anchoring
+        // already do this themselves.
+        const anchoring = window.CSS && CSS.supports("overflow-anchor", "auto");
+        const header = document.querySelector(".site-header");
+        const rect = consentBanner.getBoundingClientRect();
+        const scrolledPast = !anchoring && header && rect.bottom <= header.getBoundingClientRect().bottom;
+        consentBanner.hidden = true;
+        if (scrolledPast) window.scrollBy({ top: -rect.height, behavior: "instant" });
+      }, 220);
     });
   });
 }

@@ -27,15 +27,17 @@ Imagine a record whose songs trace a change in one person's life. A listener mig
 
 ## Creative direction includes restraint
 
-This does not mean every song needs a narrated introduction or every album needs to become an interactive production. Sometimes the right presentation is to let the track play. Creative direction includes knowing when context helps and when it gets in the way.
+Portable context does not mean every song needs a narrated introduction or every album needs to become an interactive production. Sometimes the right presentation is simply to let the track play. The point is not to add more material around the music. It is to ensure that, when context is useful, it comes from the artist rather than being inferred or invented elsewhere.
 
-For A&R, that is a familiar judgment in a new setting. Developing an artist has always involved listening for what makes the work distinct, then helping that identity survive the demands of distribution and promotion. AI adds another surface where those decisions may need to travel. The opportunity is to make the artist's approved materials useful beyond a single campaign or platform, while keeping the artist in control of how the work is framed.
+For A&R, this is a familiar judgment in a new setting. Developing an artist has always involved recognizing what makes the work distinct, then helping that identity survive distribution and promotion. AI adds another interface where those decisions need to hold. Liner notes, release stories, visual direction, and creative boundaries should remain useful beyond one campaign or platform, with the artist still in control of how the work is presented.
 
-I have been exploring this through my own album, *The Time Is Now*. Chapter I is available now, and the work is planned as a story told across chapters — an auditory and visual experience. Building that first experience raised the larger question behind [Harmonic Wave](https://harmonicwave.ai): how might an artist's direction remain attached to the music when a listener arrives through a website, a streaming link, or an AI agent?
+The practical question is how that direction can travel with the music when a listener arrives through a website, a streaming link, or an AI agent.
 
-That question is still open. A guided presentation should be judged by what it does for a particular work and its listeners, not by an assumption that more framing is always better. The strongest applications will preserve the artist's intent, respect the listening experience, and learn from what audiences actually do.
+**See media context in practice:** [The Frequency Experience](https://harmonicwave.ai/p/1f3996b1fe4916f0dbbde4d1fe1c87e2) brings together liner notes and release context with an understanding of the song that goes beyond conventional metadata to capture its shape, progression, mood, creative character, and the moments best suited to short-form hooks. Here, that context informs a production brief, host-led visual experience, and supporting shorts. Video is one expression of the context, not the product itself. Harmonic Wave is media context management for the AI era, making context portable while keeping the original recording intact and out of AI training.
 
-Streaming gave albums reach. In the AI era, the artist’s story and liner notes can travel with the music, bringing their intent into the experience without changing what an album is.
+The format should follow the work. Context might help an agent introduce a song accurately, inform a visual treatment, identify useful short-form hooks, or remain in the background until a listener asks for more. The strongest applications will preserve the artist’s intent, respect the listening experience, and know when to get out of the way.
+
+Streaming gave albums reach. In the AI era, the artist’s story and liner notes can travel with the music too, carrying the artist’s intent into new experiences without changing what an album is.
 
 ---
 
@@ -50,6 +52,6 @@ If you’re thinking about how an artist’s direction travels with the music in
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios and the independent artist behind *The Time Is Now*. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios and creator of Harmonic Wave, a media context management platform for the AI era. He works across product strategy, media direction, and AI engineering, informed by his experience as an independent recording artist.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*

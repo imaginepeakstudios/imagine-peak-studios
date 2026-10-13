@@ -1055,37 +1055,24 @@ p {
 }
 
 .consent-banner {
-  position: fixed;
-  left: auto;
-  right: 24px;
-  bottom: 24px;
-  z-index: 30;
-  width: min(calc(100vw - 48px), 390px);
-  background: rgba(252, 252, 250, 0.97);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid var(--rule);
-  border-radius: 18px;
-  box-shadow: 0 14px 36px rgba(17, 17, 17, 0.09);
+  /* In-flow strip under the header (script.js moves it there), so it never
+     sits over copy or controls; it scrolls away with the page */
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--rule);
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 220ms ease, transform 220ms ease;
+  transition: opacity 220ms ease;
 }
 
 .consent-banner.is-visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .consent-shell {
-  width: auto;
-  max-width: none;
-  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.55rem;
-  padding: 0.75rem 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1.5rem;
+  padding: 0.7rem 0;
 }
 
 .consent-copy {
@@ -1100,7 +1087,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  align-self: stretch;
+  flex-shrink: 0;
   gap: 0.45rem;
 }
 
@@ -1686,11 +1673,13 @@ p {
     font-size: 0.82rem;
   }
 
-  .consent-banner {
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-    width: auto;
+  .consent-shell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .consent-actions {
+    align-self: stretch;
   }
 
   .now-shell {
