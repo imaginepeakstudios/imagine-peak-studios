@@ -6,6 +6,8 @@
 
 **SARASOTA, Fla.** — May 5, 2026 / PRNewswire
 
+*Historical release issued May 2026. Current product and artist positioning has since evolved.*
+
 Independent artist and creator Matthew Hartley is releasing new music in a format that breaks from traditional streaming. His album *The Time Is Now* debuts as a story-driven music experience, released chapter by chapter on [Harmonic Wave](https://harmonicwave.ai), an AI-powered platform he built to give creators control over how their work is delivered and experienced.
 
 *The Time Is Now* — a journey in chapters. An AI-delivered music experience powered by Harmonic Wave.

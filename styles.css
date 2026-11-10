@@ -655,6 +655,7 @@ p {
 }
 
 .projects .shell,
+.productions .shell,
 .credibility .shell {
   position: relative;
 }
@@ -761,6 +762,43 @@ p {
 
 .project-link {
   text-decoration: none;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  margin-top: 0.35rem;
+}
+
+.project-socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.project-social {
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-links .arrow-glyph,
+.project-social .arrow-glyph {
+  display: inline-block;
+  margin-left: 0.25em;
+  text-decoration: none;
+}
+
+.project-social:hover,
+.project-social:focus-visible {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .project-visit {
@@ -873,6 +911,17 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.method-mark {
+  margin-left: 0.1em;
+  font-size: 0.75em;
+}
+
+.method-footnote {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .method-group-label {
@@ -1220,36 +1269,47 @@ p {
   text-decoration-thickness: 1px;
 }
 
-/* --- Proof strip (Selected Projects section head) --- */
-.proof-strip {
-  list-style: none;
-  margin: 1.4rem 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.45rem 1.45rem;
+/* --- Platform capabilities (Selected Projects, above the brand cards) --- */
+.platform-lede {
+  max-width: 44rem;
+  color: rgba(17, 17, 17, 0.66);
 }
 
-.proof-strip li {
-  position: relative;
-  font-size: var(--meta);
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.platform-item {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(17, 17, 17, 0.12);
+}
+
+.platform-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.platform-item p {
+  margin: 0;
+  font-size: 1rem;
   color: var(--muted);
 }
 
-.proof-strip li + li::before {
-  content: "";
-  position: absolute;
-  left: -0.8rem;
-  top: 50%;
-  width: 3px;
-  height: 3px;
-  margin-top: -1.5px;
-  border-radius: 50%;
-  background: var(--rule);
+@media (max-width: 900px) {
+  .platform-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .platform-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 /* --- Small meta line under a project card (patent / legal detail) --- */
@@ -1347,45 +1407,11 @@ p {
   padding: 20px;
 }
 
-.project-visual-lockup {
-  position: absolute;
-  left: 1.1rem;
-  bottom: 1.1rem;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.project-visual-lockup .project-visual-bug {
-  position: static;
-  left: auto;
-  bottom: auto;
-}
-
-.project-visual-wordmark {
-  font-size: 1.28rem;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  line-height: 1;
-  color: #1f2a37;
-}
-
-/* RoboticWorks runs light — off-white header, navy mark — so its frame and bug
-   invert the treatment the two music cards use. */
-/* The RoboticWorks header is nearly white, so the frame needs a visible edge or
-   the image dissolves into the page. Same grey as the Services accent boxes
-   (#e7e7e7) with a darker rule than the two dark cards need. */
-.project-screenshot-frame-light {
-  background: #e7e7e7;
-  border-color: rgba(17, 17, 17, 0.18);
-}
-
-.project-visual-bug-onlight {
-  padding: 16px;
-  background: #fafaf8;
-  border-color: rgba(17, 17, 17, 0.14);
-  box-shadow: 0 6px 18px rgba(17, 17, 17, 0.14);
+/* The Realty Wave icon is its own full navy disc, so it fills the wrapper
+   edge to edge instead of sitting inset on the dark disc. */
+.project-visual-bug-disc {
+  padding: 0;
+  overflow: hidden;
 }
 
 .project-screenshot {
@@ -1691,9 +1717,6 @@ p {
     font-size: 0.92rem;
   }
 
-  /* Separator dots are absolutely positioned, so a wrapped row would start
-     with a dangling dot. Below 900px the strip wraps — drop them and let the
-     gap do the separating. */
   /* The bug is a fixed 86px, which is ~16% of the 520px desktop frame but a
      quarter of the frame on a phone. Scale it down so it keeps the same
      optical weight. */
@@ -1705,34 +1728,16 @@ p {
     bottom: 0.85rem;
   }
 
-  .project-visual-lockup {
-    left: 0.85rem;
-    bottom: 0.85rem;
-    gap: 0.55rem;
-  }
-
-  .project-visual-wordmark {
-    font-size: 1.02rem;
-  }
-
   .project-visual-bug-tile {
     padding: 15px;
   }
 
+  .project-visual-bug-disc {
+    padding: 0;
+  }
+
   .method-group {
     grid-template-columns: 3.9rem minmax(0, 1fr);
-  }
-
-  .project-visual-bug-onlight {
-    padding: 12px;
-  }
-
-  .proof-strip {
-    gap: 0.35rem 1.3rem;
-  }
-
-  .proof-strip li + li::before {
-    display: none;
   }
 
   .footer-shell {

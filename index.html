@@ -10,7 +10,7 @@
     />
     <meta
       name="keywords"
-      content="Imagine Peak Studios, product strategy, AI engineering, experience design, original productions, consulting, Matthew Hartley, Harmonic Wave"
+      content="Imagine Peak Studios, product strategy, AI engineering, experience design, original productions, consulting, Matthew Hartley, Harmonic Wave, Realty Wave"
     />
     <meta name="author" content="Imagine Peak Studios" />
     <meta name="robots" content="index, follow" />
@@ -94,10 +94,12 @@
         "founder": { "@id": "https://imaginepeakstudios.com/#matthew-hartley" },
         "email": "hello@imaginepeakstudios.com",
         "sameAs": [
-          "https://harmonicwave.ai",
-          "https://matthewhartleymusic.com",
           "https://github.com/imaginepeakstudios",
           "https://www.linkedin.com/in/matthew-w-hartley/"
+        ],
+        "subOrganization": [
+          { "@type": "Organization", "name": "Realty Wave", "url": "https://realtywave.ai/" },
+          { "@type": "Organization", "name": "Harmonic Wave", "url": "https://harmonicwave.ai" }
         ]
       }
     </script>
@@ -120,8 +122,7 @@
         "url": "https://imaginepeakstudios.com/",
         "sameAs": [
           "https://www.linkedin.com/in/matthew-w-hartley/",
-          "https://matthewhartleymusic.com",
-          "https://harmonicwave.ai"
+          "https://matthewhartleymusic.com"
         ]
       }
     </script>
@@ -129,39 +130,62 @@
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Selected Projects — Imagine Peak Studios",
+        "name": "Projects — Imagine Peak Studios",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "item": {
               "@type": "Organization",
-              "name": "Harmonic Wave",
-              "url": "https://harmonicwave.ai",
-              "description": "The studio's flagship product. A platform for telling the story behind a song: a Host-led show built around a track — film, lyric video, and portrait shorts — with the artist approving how their music is presented before production begins.",
-              "founder": { "@id": "https://imaginepeakstudios.com/#matthew-hartley" }
+              "name": "Realty Wave",
+              "url": "https://realtywave.ai/",
+              "description": "The real estate brand of the studio's experience platform. Area and property experiences for agents and brokers: films and Reels, original music, explore pages, and local guides.",
+              "parentOrganization": { "@id": "https://imaginepeakstudios.com/#organization" },
+              "subjectOf": {
+                "@type": "WebSite",
+                "name": "Ask About Here",
+                "url": "https://askabouthere.com/venice",
+                "sameAs": [
+                  "https://www.youtube.com/@AskAboutHere",
+                  "https://www.instagram.com/askabout_here/",
+                  "https://www.facebook.com/AskAboutHere/"
+                ]
+              }
             }
           },
           {
             "@type": "ListItem",
             "position": 2,
             "item": {
-              "@type": "MusicGroup",
-              "name": "Matthew Hartley Music",
-              "url": "https://matthewhartleymusic.com",
-              "description": "The studio's original production. The Time Is Now is a story-driven album being released chapter by chapter. Chapter I is available on the major streaming platforms and presented through Harmonic Wave as an artist-owned MCP server; later chapters are planned.",
-              "member": { "@id": "https://imaginepeakstudios.com/#matthew-hartley" }
+              "@type": "Organization",
+              "name": "Harmonic Wave",
+              "url": "https://harmonicwave.ai",
+              "sameAs": [
+                "https://www.youtube.com/@HarmonicWaveMedia",
+                "https://www.instagram.com/harmonicwavemedia/",
+                "https://www.facebook.com/HarmonicWaveMedia/"
+              ],
+              "description": "The music brand of the studio's experience platform. Telling the story behind a song: a Host-led show built around a track — film, lyric video, and portrait shorts — with the artist approving how their music is presented before production begins.",
+              "parentOrganization": { "@id": "https://imaginepeakstudios.com/#organization" }
             }
           },
           {
             "@type": "ListItem",
             "position": 3,
             "item": {
-              "@type": "Organization",
-              "name": "RoboticWorks",
-              "url": "https://roboticworks.ai",
-              "description": "In research and development. Compliance infrastructure for autonomous systems in regulated environments, with a focus on governance, procedural accountability, and long-term auditability.",
-              "founder": { "@id": "https://imaginepeakstudios.com/#matthew-hartley" }
+              "@type": "MusicGroup",
+              "name": "Matthew Hartley Music",
+              "url": "https://matthewhartleymusic.com",
+              "sameAs": [
+                "https://www.youtube.com/@matthewhartleymusic",
+                "https://www.instagram.com/matthewhartleymusic",
+                "https://www.facebook.com/matthewhartleymusic",
+                "https://www.tiktok.com/@matthewhartleymusic",
+                "https://open.spotify.com/artist/6xGolG7hG3uHKOEweDXqxb",
+                "https://music.apple.com/us/artist/matthew-hartley/1765289743"
+              ],
+              "description": "The studio's original production, separate from its experience platform: organic, human music and film, made through traditional production, without AI. The Time Is Now is a story-driven album being released chapter by chapter. Chapter I is available on the major streaming platforms; later chapters are planned.",
+              "member": { "@id": "https://imaginepeakstudios.com/#matthew-hartley" }
             }
           }
         ]
@@ -247,10 +271,7 @@
             A studio that ships its own products, then works on yours.
           </h2>
           <p class="intro-lead">
-            Imagine Peak Studios is directed by Matthew Hartley. The studio builds and ships its own AI-native platforms, then brings that same product discipline to client work — product strategy, design, engineering, and original media production under one roof.
-          </p>
-          <p class="intro-support">
-            Flagship work is <strong>Harmonic Wave</strong>, a platform that builds Host-led shows, films, and portrait shorts around the story behind a song. <strong>Matthew Hartley Music</strong> is its first public artist catalog — an album written and directed here, being released chapter by chapter, and running on the platform end to end. <strong>RoboticWorks</strong>, compliance infrastructure for autonomous systems, is in research and development.
+            Directed by Matthew Hartley, Imagine Peak Studios builds and runs its own experience platform — Realty Wave for real estate, Harmonic Wave for music — and brings the same product discipline to client work.
           </p>
         </div>
       </section>
@@ -258,18 +279,93 @@
       <section class="section projects ambient-section reveal-section" id="projects">
         <div class="shell">
           <div class="section-head">
-            <div class="eyebrow">Selected Projects</div>
-            <h2>Flagship work in product form.</h2>
-            <ul class="proof-strip">
-              <li>Host-led shows</li>
-              <li>Original catalog</li>
-              <li>Press released</li>
-            </ul>
+            <div class="eyebrow">Experience Platform</div>
+            <h2>One AI-native platform. Many stories.</h2>
+            <p class="platform-lede">
+              The studio's experience platform turns a subject — a song, a place, a property — into connected media and interactive experiences. Each brand applies the platform to one market, with human review before publication.
+            </p>
+          </div>
+          <div class="platform-grid">
+            <div class="platform-item">
+              <h3>Conversational agents</h3>
+              <p>In Realty Wave, local guides people can call or message anytime, grounded in sourced information, with an emailed summary of what they discussed.</p>
+            </div>
+            <div class="platform-item">
+              <h3>AI-assisted production</h3>
+              <p>Films, Reels, portrait shorts, and lyric videos made through an automated workflow, with human review at key stages.</p>
+            </div>
+            <div class="platform-item">
+              <h3>Hosts</h3>
+              <p>AI presenters with a consistent look and voice, who front the films and carry the story from one format to the next.</p>
+            </div>
+            <div class="platform-item">
+              <h3>Original music</h3>
+              <p>For place-based experiences, songs written and produced for the area, like a sing-along about a day in a beach town.</p>
+            </div>
+            <div class="platform-item">
+              <h3>Experience pages</h3>
+              <p>One page for each experience, bringing the film, the music, the context, and the sources together.</p>
+            </div>
+            <div class="platform-item">
+              <h3>Distribution</h3>
+              <p>Preparing releases for video, social, and compatible AI channels, with publishing support scoped to each project.</p>
+            </div>
           </div>
           <div class="project-list">
-            <article class="project-feature feature-primary feature-media">
+            <article class="project-feature feature-media">
               <div class="project-content">
-                <div class="project-meta">Flagship Product &middot; Taking Projects</div>
+                <div class="project-meta">Real Estate &middot; Taking Projects</div>
+                <h3>
+                  <a
+                    class="project-link"
+                    href="https://realtywave.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Realty Wave</a
+                  >
+                </h3>
+                <p>
+                  Every home has a story. Realty Wave applies the platform to places, creating area and property experiences for agents and brokers.
+                </p>
+                <p>
+                  <strong>Ask About Here</strong> is its first implementation: a Venice Beach film and original song, a sourced explore page, and Sandy, a local guide people can call or message anytime. Real photography and source information are reviewed before publication.
+                </p>
+                <div class="project-links">
+                  <a class="project-visit" href="https://realtywave.ai" target="_blank" rel="noopener noreferrer">Visit Realty Wave<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-visit" href="https://askabouthere.com/venice" target="_blank" rel="noopener noreferrer">Explore Ask About Here<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                </div>
+                <p class="project-socials">
+                  <span>Ask About Here on</span>
+                  <a class="project-social" href="https://www.youtube.com/@AskAboutHere" target="_blank" rel="noopener noreferrer">YouTube<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://www.instagram.com/askabout_here/" target="_blank" rel="noopener noreferrer">Instagram<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://www.facebook.com/AskAboutHere/" target="_blank" rel="noopener noreferrer">Facebook<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                </p>
+              </div>
+              <div class="project-visual project-visual-wide project-screenshot-frame">
+                <img
+                  class="project-screenshot"
+                  src="realty-wave-cover.jpg"
+                  alt="A waterfront porch at sunset over palms, homes, and a moored boat, with Come on Home in handwritten lettering — the Realty Wave header image."
+                  width="1400"
+                  height="781"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-visual-bug project-visual-bug-disc">
+                  <img
+                    src="realty-wave-icon.png"
+                    alt=""
+                    width="256"
+                    height="256"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              </div>
+            </article>
+            <article class="project-feature feature-media">
+              <div class="project-content">
+                <div class="project-meta">Music &middot; Taking Projects</div>
                 <h3>
                   <a
                     class="project-link"
@@ -283,18 +379,18 @@
                   A platform for telling the story behind a song. Harmonic Wave builds a Host-led show around a track — film, lyric video, and portrait shorts — and the artist approves how their music is presented before production begins.
                 </p>
                 <p>
-                  An automated production workflow, with human review at key stages, brings the song, the Host, and the visual story together. The creator's context stays with the music across films, shorts, and discovery through compatible AI agents. It is the studio's flagship product and the proof of its method.
+                  An automated production workflow, with human review at key stages, brings the song, the Host, and the visual story together. The creator's context stays with the music across films, shorts, and discovery through compatible AI agents. It was the platform's first brand and the proof of the studio's method.
                 </p>
-                <p class="project-note">
-                  Self-serve signup is not open yet. We are taking song projects now; the waitlist is open for wider access.
+                <div class="project-links">
+                  <a class="project-visit" href="https://harmonicwave.ai" target="_blank" rel="noopener noreferrer">Visit Harmonic Wave<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-visit" href="https://harmonicwave.ai/p/1f3996b1fe4916f0dbbde4d1fe1c87e2" target="_blank" rel="noopener noreferrer">Explore The Frequency Experience<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                </div>
+                <p class="project-socials">
+                  <span>Harmonic Wave on</span>
+                  <a class="project-social" href="https://www.youtube.com/@HarmonicWaveMedia" target="_blank" rel="noopener noreferrer">YouTube<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://www.instagram.com/harmonicwavemedia/" target="_blank" rel="noopener noreferrer">Instagram<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://www.facebook.com/HarmonicWaveMedia/" target="_blank" rel="noopener noreferrer">Facebook<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
                 </p>
-                <a
-                  class="project-visit"
-                  href="https://harmonicwave.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Visit site</a
-                >
               </div>
               <div class="project-visual project-visual-wide project-screenshot-frame">
                 <img
@@ -318,9 +414,23 @@
                 </span>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section productions ambient-section reveal-section" id="productions">
+        <div class="shell">
+          <div class="section-head">
+            <div class="eyebrow">Original Productions</div>
+            <h2>Organic, human production.</h2>
+            <p class="platform-lede">
+              Matthew Hartley writes, records, and films his own work through traditional production, with no AI and separate from the platform.
+            </p>
+          </div>
+          <div class="project-list">
             <article class="project-feature feature-media">
               <div class="project-content">
-                <div class="project-meta">Live &middot; Chapter I Streaming &middot; Artist-owned MCP Server</div>
+                <div class="project-meta">Original Production &middot; Chapter I Streaming</div>
                 <h3>
                   <a
                     class="project-link"
@@ -331,25 +441,24 @@
                   >
                 </h3>
                 <p>
-                  A live artist platform and story-driven album experience powered by Harmonic Wave, including an artist-owned MCP server for agent-delivered listening.
+                  A live artist site and a story-driven album, written, recorded, and filmed by people.
                 </p>
                 <p>
-                  <em>The Time Is Now</em> is being released chapter by chapter — an auditory and visual experience. Chapter I is streaming on the major platforms now, with later chapters planned. Connected, compatible AI clients can discover and stream what is available as one continuous experience.
+                  <em>The Time Is Now</em> is being released chapter by chapter — an auditory and visual experience. Chapter I is streaming on the major platforms now, with later chapters planned.
                 </p>
-                <a
-                  class="project-visit"
-                  href="https://matthewhartleymusic.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Visit site</a
-                >
-                <a
-                  class="project-visit"
-                  href="https://youtu.be/WBoha8kb2BI?si=I9mMfA_Ar834rOj_"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Watch a video production</a
-                >
+                <div class="project-links">
+                  <a class="project-visit" href="https://matthewhartleymusic.com" target="_blank" rel="noopener noreferrer">Visit Matthew Hartley Music<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-visit" href="https://youtu.be/WBoha8kb2BI?si=I9mMfA_Ar834rOj_" target="_blank" rel="noopener noreferrer">Watch a video production<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                </div>
+                <p class="project-socials">
+                  <span>Matthew Hartley on</span>
+                  <a class="project-social" href="https://www.youtube.com/@matthewhartleymusic" target="_blank" rel="noopener noreferrer">YouTube<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://www.instagram.com/matthewhartleymusic" target="_blank" rel="noopener noreferrer">Instagram<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://www.facebook.com/matthewhartleymusic" target="_blank" rel="noopener noreferrer">Facebook<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://www.tiktok.com/@matthewhartleymusic" target="_blank" rel="noopener noreferrer">TikTok<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://open.spotify.com/artist/6xGolG7hG3uHKOEweDXqxb" target="_blank" rel="noopener noreferrer">Spotify<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                  <a class="project-social" href="https://music.apple.com/us/artist/matthew-hartley/1765289743" target="_blank" rel="noopener noreferrer">Apple Music<span class="arrow-glyph" aria-hidden="true">↗&#xFE0E;</span></a>
+                </p>
               </div>
               <div class="project-visual project-visual-wide project-screenshot-frame">
                 <img
@@ -371,46 +480,6 @@
                     decoding="async"
                   />
                 </span>
-              </div>
-            </article>
-            <article class="project-feature feature-media">
-              <div class="project-content">
-                <div class="project-meta">In Research &amp; Development</div>
-                <h3>RoboticWorks</h3>
-                <p>
-                  Compliance infrastructure for autonomous systems in regulated environments, with a focus on governance, procedural accountability, and long-term auditability. Framework and platform in research and development; details stay private while IP, pilots, and partner development continue.
-                </p>
-                <a
-                  class="project-visit"
-                  href="https://roboticworks.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Visit site</a
-                >
-              </div>
-              <div class="project-visual project-visual-wide project-screenshot-frame project-screenshot-frame-light">
-                <img
-                  class="project-screenshot"
-                  src="roboticworks-header.jpg"
-                  alt="The RoboticWorks header texture — a pale technical drawing of intersecting rules and corner marks."
-                  width="1400"
-                  height="615"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="project-visual-lockup">
-                  <span class="project-visual-bug project-visual-bug-onlight">
-                    <img
-                      src="roboticworks-icon.png"
-                      alt=""
-                      width="256"
-                      height="256"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </span>
-                  <span class="project-visual-wordmark">RoboticWorks</span>
-                </div>
               </div>
             </article>
           </div>
@@ -502,8 +571,8 @@
                   <span>ElevenLabs</span>
                   <span>Deepgram</span>
                   <span>Lyra</span>
-                  <span>Suno</span>
-                  <span>Udio</span>
+                  <span>Suno<sup class="method-mark" aria-hidden="true">*</sup></span>
+                  <span>Udio<sup class="method-mark" aria-hidden="true">*</sup></span>
                   <span>Music AI</span>
                 </div>
               </div>
@@ -531,6 +600,9 @@
                 </div>
               </div>
             </div>
+            <p class="method-footnote">
+              <span aria-hidden="true">*</span> Suno and Udio are used in the experience platform only, never in original productions.
+            </p>
             <p>
               We combine product thinking, media direction, and AI engineering — design tools like Figma and Adobe CC alongside agentic coding environments and generative audio — moving from concept to production at the speed of modern tooling, with the craft of a studio.
             </p>

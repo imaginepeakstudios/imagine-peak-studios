@@ -1,14 +1,14 @@
 # Imagine Peak Studios
 
-> A studio that builds and ships its own AI-native platforms, then brings that product discipline to client work. Product strategy, media and sonic direction, and AI engineering under one roof. Flagship product: Harmonic Wave. Founded by Matthew Hartley.
+> A studio that builds and runs one AI-native experience platform, under two brands: Realty Wave (real estate) and Harmonic Wave (music). It brings the same product discipline to client work. Product strategy, media and sonic direction, and AI engineering under one roof. Separately, the studio makes original music and film through traditional, human production. Founded by Matthew Hartley.
 
 ## Background
 
-Imagine Peak Studios (IPS) operates at the intersection of software, storytelling, and production. The studio builds and ships its own platforms, then applies the same product discipline to client work. Current work:
+Imagine Peak Studios (IPS) operates at the intersection of software, storytelling, and production. The studio builds and runs its own experience platform, then applies the same product discipline to client work. Current work:
 
-- **Harmonic Wave** — the studio's flagship product. A platform for telling the story behind a song: a Host-led show built around a track — film, lyric video, and portrait shorts — with the artist approving how their music is presented before production begins. An automated production workflow with human review at key stages; the creator's context stays with the music across films, shorts, and discovery through compatible AI agents. Taking song projects now; self-serve signup is not open yet (waitlist open).
-- **Matthew Hartley Music** — the studio's first public artist catalog, with an artist-owned MCP server (live April 2026). Exposes the album *The Time Is Now* as a structured, queryable catalog for compatible, connected AI clients. Being released chapter by chapter as an auditory and visual experience — Chapter I is streaming on the major platforms, later chapters are planned.
-- **RoboticWorks** — compliance infrastructure for autonomous systems in regulated environments. In research and development, patent pending.
+- **Realty Wave** — the experience platform's real estate brand. Area and property experiences for agents and brokers: films and Reels, original music, explore pages, and intelligent local guides people can talk to anytime. Its work in practice is [Ask About Here](https://askabouthere.com/venice): area guides people can watch, explore, and call, starting with Venice Beach, Florida — a film set to an original song, an explore page with local history and sources, and a local guide you can call. Real photography, with human review of published work and of the information the guides use.
+- **Harmonic Wave** — the experience platform's music brand. Telling the story behind a song: a Host-led show built around a track — film, lyric video, and portrait shorts — with the artist approving how their music is presented before production begins. An automated production workflow with human review at key stages; the creator's context stays with the music across films, shorts, and discovery through compatible AI agents. Taking song projects now; available by invitation.
+- **Matthew Hartley Music** — the studio's original production, separate from the experience platform: organic, human music and film, made through traditional production, without AI. The album *The Time Is Now* is being released chapter by chapter as an auditory and visual experience — Chapter I is streaming on the major platforms, later chapters are planned.
 
 ## Insights
 
@@ -27,20 +27,19 @@ Press releases, media coverage, and announcements from Imagine Peak Studios.
 - [Matthew Hartley launches Harmonic Wave, a new platform for AI-powered media experiences](https://imaginepeakstudios.com/press/harmonic-wave-launch.md): Platform launch announcement — structured, AI-driven media delivery with native MCP support. Originally distributed via PR Newswire on May 7, 2026.
 - [Musician Matthew Hartley releases *The Time Is Now* as a chapter-based music experience on AI platform Harmonic Wave](https://imaginepeakstudios.com/press/the-time-is-now-launch.md): The launch announcement for Matthew Hartley's debut album, released chapter by chapter on the Harmonic Wave platform. Originally distributed via PR Newswire on May 5, 2026.
 
-## Selected Projects
+## Projects
 
-- [Harmonic Wave](https://harmonicwave.ai) — Flagship product. Host-led shows, films, and portrait shorts built around the story behind a song; taking song projects, self-serve signup not yet open
-- [Matthew Hartley Music](https://matthewhartleymusic.com) — The studio's first public artist catalog, with an artist-owned MCP server
-- [Matthew Hartley Music MCP repo](https://github.com/imaginepeakstudios/matthewhartleymusic-mcp) — Apache 2.0, with install snippets for Claude Desktop, Claude Code, and any compatible AI client
-- [RoboticWorks](https://roboticworks.ai) — In research and development
+- [Realty Wave](https://realtywave.ai) — Experience platform, real estate brand. Area and property experiences for agents and brokers; taking projects; implemented as [Ask About Here](https://askabouthere.com/venice), starting with Venice Beach, Florida ([YouTube](https://www.youtube.com/@AskAboutHere), [Instagram](https://www.instagram.com/askabout_here/), [Facebook](https://www.facebook.com/AskAboutHere/))
+- [Harmonic Wave](https://harmonicwave.ai) — Experience platform, music brand. Host-led shows, films, and portrait shorts built around the story behind a song; taking song projects, available by invitation; live example: [The Frequency](https://harmonicwave.ai/p/1f3996b1fe4916f0dbbde4d1fe1c87e2); [YouTube](https://www.youtube.com/@HarmonicWaveMedia), [Instagram](https://www.instagram.com/harmonicwavemedia/), [Facebook](https://www.facebook.com/HarmonicWaveMedia/)
+- [Matthew Hartley Music](https://matthewhartleymusic.com) — The studio's original production; organic, human music and film, made through traditional production, without AI ([YouTube](https://www.youtube.com/@matthewhartleymusic), [Instagram](https://www.instagram.com/matthewhartleymusic), [Facebook](https://www.facebook.com/matthewhartleymusic), [TikTok](https://www.tiktok.com/@matthewhartleymusic), [Spotify](https://open.spotify.com/artist/6xGolG7hG3uHKOEweDXqxb), [Apple Music](https://music.apple.com/us/artist/matthew-hartley/1765289743))
 
 ## Code
 
-- [Imagine Peak Studios on GitHub](https://github.com/imaginepeakstudios) — Public repos including the Matthew Hartley Music MCP server (Apache 2.0)
+- [Imagine Peak Studios on GitHub](https://github.com/imaginepeakstudios) — Public repos
 
 ## Optional
 
 - [Homepage](https://imaginepeakstudios.com/): Hero, projects, services, credibility, method, contact
 - [Services](https://imaginepeakstudios.com/#services): Product Strategy, Media & Sonic Direction, Systems & Experience Development
-- [Method](https://imaginepeakstudios.com/#method): Human direction. AI engineering. Tools and vendors include Claude Design, Figma, Adobe CC, Claude, ChatGPT, Gemini, Grok, ElevenLabs, Deepgram, Lyra, Suno, Udio, Music AI, GPT Image, Nano Banana, Seedance, Veo, HeyGen, Tavus, Cloudflare, WP Engine.
+- [Method](https://imaginepeakstudios.com/#method): Human direction. AI engineering. Tools and vendors include Claude Design, Figma, Adobe CC, Claude, ChatGPT, Gemini, Grok, ElevenLabs, Deepgram, Lyra, Suno and Udio (experience platform only, never in original productions), Music AI, GPT Image, Nano Banana, Seedance, Veo, HeyGen, Tavus, Cloudflare, WP Engine.
 - [Contact](mailto:hello@imaginepeakstudios.com): hello@imaginepeakstudios.com

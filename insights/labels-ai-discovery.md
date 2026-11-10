@@ -127,6 +127,6 @@ If you’re thinking about what AI-mediated discovery means for your roster, you
 
 ---
 
-*Matthew Hartley is the founder of Imagine Peak Studios and the independent artist behind *The Time Is Now*. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on streaming services and presented through an artist-owned MCP server.*
+*Matthew Hartley is the founder of Imagine Peak Studios and the independent artist behind *The Time Is Now*. He works across product strategy, media direction, and AI engineering. Chapter I of the album is available on major streaming services; later chapters are planned.*
 
 *Imagine Peak Studios · 8051 N Tamiami Trail Ste E6 · Sarasota FL 34243 · hello@imaginepeakstudios.com*
