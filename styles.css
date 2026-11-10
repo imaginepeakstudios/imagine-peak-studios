@@ -1282,6 +1282,13 @@ p {
   margin-bottom: 4rem;
 }
 
+.platform-access {
+  margin: 0;
+  max-width: 44rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 .platform-item {
   padding-top: 1.25rem;
   border-top: 1px solid rgba(17, 17, 17, 0.12);
